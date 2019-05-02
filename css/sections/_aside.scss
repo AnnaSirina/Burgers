@@ -1,0 +1,27 @@
+/*<aside class="sidebar">
+						<ur class="sidebar__link">
+							<li class="sidebar__items">
+							<a class="sidebar__link"></a>								
+                            </li>
+*/
+
+.sidebar__link {position: fixed;}
+.sidebar__items {
+    list-style-type: none;
+    min-width: 18px;
+    text-align: center;
+    transition: 0.2s;
+    
+    
+        &::before{
+        content: '\2022';
+        color: #fff;
+        align-content: center;
+        
+        
+    }
+        &:hover {
+            border-radius: 50%;
+            border: 1px solid #fff;
+        }
+}

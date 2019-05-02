@@ -1,0 +1,18 @@
+.order__button {
+    min-width: 98px;
+    min-height: 37px;
+    background: #e45028;
+    border-radius: 5px;
+    font-family: 'ununtu';
+    font-weight: medium;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.2s;
+
+    &:hover{
+        font-weight: bold;
+        border: 1px solid #fff;
+    }
+}
+

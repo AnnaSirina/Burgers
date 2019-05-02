@@ -1,0 +1,22 @@
+
+.about {display: flex;
+}
+
+.about__pic {
+    background: url('../img/mainburger.png');
+    min-width: 480px;
+    background-repeat: no-repeat;
+    margin-left:50px;
+}
+.about__title {
+    font-family: 'gagalin';
+    font-size: 72px;
+    color: #f9b43b;
+    margin-top: 120px;
+}
+
+.about__desc {
+    font-family: 'lifehack';
+    font-size: 65px;
+    color: #fff;
+}

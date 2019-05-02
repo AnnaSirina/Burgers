@@ -1,21 +1,223 @@
-@import url('../styles/base/normalize.css');
-@import url('../styles/base/fonts.css');
-@import url('../styles/base/base.css');
-@import url('../styles/blocks/header.css');
-@import url('../styles/blocks/logo.css');
-@import url('../styles/blocks/contacts.css');
-@import url('../styles/blocks/nav.css');
-@import url('../styles/blocks/plane-banner.css');
-@import url('../styles/blocks/tariff.css');
-@import url('../styles/blocks/infoblock.css');
-@import url('../styles/blocks/pagination.css');
-@import url('../styles/blocks/footer.css');
-@import url('../styles/blocks/about.css');
-@import url('../styles/blocks/socials.css');
-@import url('../styles/blocks/plug.css');
-@import url('../styles/blocks/form.css');
-@import url('../styles/blocks/breadcrumbs.css');
-@import url('../styles/blocks/crew.css');
-@import url('../styles/blocks/partners.css');
-@import url('../styles/blocks/intro.css');
-@import url('../styles/blocks/news.css');
+@import url(../css/base/normalize.css);
+@font-face {
+  font-family: 'ubuntu';
+  src: url("fonts/ubuntu-b-webfont.woff2") format("woff2"), url("fonts/ubuntu-b-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url("fonts/ubuntu-light-webfont.woff2") format("woff2"), url("fonts/ubuntu-light-webfont.woff") format("woff");
+  font-weight: light;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url("fonts/ubuntu-medium-webfont.woff2") format("woff2"), url("fonts/ubuntu-medium-webfont.woff") format("woff");
+  font-weight: medium;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url("fonts/ubuntu-regular-webfont.woff2") format("woff2"), url("fonts/ubuntu-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'lifehack';
+  src: url("fonts/lifehack_medium-webfont.woff2") format("woff2"), url("fonts/lifehack_medium-webfont.woff") format("woff");
+  font-weight: medium;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'gagalin';
+  src: url("fonts/gagalin-regular-webfont.woff2") format("woff2"), url("fonts/gagalin-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+html, body {
+  height: 100%; }
+
+body {
+  background-color: #fff;
+  font-family: 'ubuntu', 'lifehack', 'gagalin', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  margin: 0px;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.wrapper {
+  overflow: hidden; }
+
+.wrapper__content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto; }
+
+.maincontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  max-width: 90%; }
+
+.aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 10%; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  list-style: none; }
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer; }
+
+h1, h2, h3, h4, h5 {
+  margin: 100;
+  font-weight: normal; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.into-page {
+  background: url("../img/first-page.png");
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: cover; }
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding-top: 15px; }
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.about__pic {
+  background: url("../img/mainburger.png");
+  min-width: 480px;
+  background-repeat: no-repeat;
+  margin-left: 50px; }
+
+.about__title {
+  font-family: 'gagalin';
+  font-size: 72px;
+  color: #f9b43b;
+  margin-top: 120px; }
+
+.about__desc {
+  font-family: 'lifehack';
+  font-size: 65px;
+  color: #fff; }
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.nav__item:before {
+  content: '\2022';
+  color: #fff; }
+
+.nav__item:first-child::before {
+  content: ''; }
+
+.nav__item .nav__title {
+  font-family: 'ununtu';
+  font-weight: medium;
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 15px; }
+
+.order__button {
+  min-width: 98px;
+  min-height: 37px;
+  background: #e45028;
+  border-radius: 5px;
+  font-family: 'ununtu';
+  font-weight: medium;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
+  .order__button:hover {
+    font-weight: bold;
+    border: 1px solid #fff; }
+
+.next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.next__page {
+  background: url("../img/scroll.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  min-width: 170px;
+  min-height: 100px; }
+
+/*<aside class="sidebar">
+						<ur class="sidebar__link">
+							<li class="sidebar__items">
+							<a class="sidebar__link"></a>								
+                            </li>
+*/
+.sidebar__link {
+  position: fixed; }
+
+.sidebar__items {
+  list-style-type: none;
+  min-width: 18px;
+  text-align: center;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
+  .sidebar__items::before {
+    content: '\2022';
+    color: #fff;
+    -ms-flex-line-pack: center;
+    align-content: center; }
+  .sidebar__items:hover {
+    border-radius: 50%;
+    border: 1px solid #fff; }

@@ -5,70 +5,65 @@
     <meta name="viewport" content="width=1100px, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Главная</title>
-		<link rel="stylesheet" href="./styles/main.css">
+		<link rel="stylesheet" href="./css/main.css">
 		<link rel="shortcut icon" href="./img/fav.ico" type="image/x-icon">
 </head>
 <body>
-
 	<div class="wrapper">
-		<div class="wrapper__content">
-			
+		
+			<!--Первая страница лэндинга-->
+			<section class="into-page">
+				<div class="container">
+				<!--разметка хэдера: лого, меню, батон-->
+					<header class="intro">
+							<div class="logo">
+								<a class="logo__logo">
+									<img class="logo__img" src="./img/logo.png" alt="Логотип сайта">
+								</a>
+							</div>
+		
+							<nav class="nav">
+								<ul class="nav__list">
+									<li class="nav__item nav__item--active">
+										<a class="nav__link">
+											<span class="nav__title">О нас</span>
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link">
+											<span class="nav__title">Бургеры</span>
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link">
+											<span class="nav__title">Команда</span>
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link">
+											<span class="nav__title">Меню</span>
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link">
+											<span class="nav__title">Отзывы</span>
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link">
+											<span class="nav__title">Контакты</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+		
+							<div class="order">
+								<button type="button" class="order__button">Заказать</button>
+							</div>
+					</header>
 
-			<!--разметка блока header--> 
-			<header class="header">
-				<div class="container container__flex">
-					<div class="logo">
-						<a class="logo__logo">
-							<img class="logo__img" src="./img/logo.png" alt="Логотип сайта">
-						</a>
-					</div>
-
-					<nav class="nav">
-						<ul class="nav__list">
-							<li class="nav__item">
-								<a class="nav__link">
-									<span class="nav__title">О нас</span>
-								</a>
-							</li>
-							<li class="nav__item">
-								<a class="nav__link">
-									<span class="nav__title">Бургеры</span>
-								</a>
-							</li>
-							<li class="nav__item">
-								<a class="nav__link">
-									<span class="nav__title">Команда</span>
-								</a>
-							</li>
-							<li class="nav__item">
-								<a class="nav__link">
-									<span class="nav__title">Меню</span>
-								</a>
-							</li>
-							<li class="nav__item">
-								<a class="nav__link">
-									<span class="nav__title">Отзывы</span>
-								</a>
-							</li>
-							<li class="nav__item">
-								<a class="nav__link">
-									<span class="nav__title">Контакты</span>
-								</a>
-							</li>
-						</ul>
-					</nav>
-
-					<div class="order">
-						<button type="button" class="order__button">Заказать</button>
-					</div>
-				</div>
-			</header>
-
-			<!--разметка основной наполнения-->
-
-			<div class="maincontent">
-				<div class="container container__mainflex">
-					
+				<!--разметка поля с бугрером-->
+				<div class="maincontent">
 					<div class="about">
 						<div class="about__pic"></div>
 						<div class="about__we-do">
@@ -77,8 +72,9 @@
 						</div>
 					</div>
 
-					<aside class="sidebar">
-						<ur class="sidebar__link">
+				<!--разметка для бокового меню-->
+				<aside class="sidebar">
+						<ur class="sidebar__list">
 							<li class="sidebar__items">
 							<a class="sidebar__link"></a>								
 							</li>
@@ -105,18 +101,20 @@
 							</li>
 						</ur>
 					</aside>
+					</div>
+
+				<!--разметка для слайдера-->
+					<div class="next">
+						<a href="" class="next__page"></a>
+					</div>
+
 				</div>
-			</div>
+			</section>
+			
+			<!--Вторая страница лэндинга-->
 
-			<!--разметка перехода на след.страницу-->
-			<div class="container container__flexfooter">
-			<div class="next">
-				<img class="next__pointer" src="./img/next.png" alt="Вниз">
-			</div>
-			</div>
-
-		</div>
+			
+		
 	</div>
-
 </body>
 </html>
