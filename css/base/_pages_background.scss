@@ -4,6 +4,20 @@
     -webkit-background-size: 100%; 
     -o-background-size: 100%; 
     background-size: cover;
+    width:100vw;
+    height:100vh;
 }
 
 
+.best {
+    background: url('../img/second-page.png');
+    -moz-background-size: 100%; 
+    -webkit-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: cover;
+    width:100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

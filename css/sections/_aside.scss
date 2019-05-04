@@ -1,16 +1,11 @@
-/*<aside class="sidebar">
-						<ur class="sidebar__link">
-							<li class="sidebar__items">
-							<a class="sidebar__link"></a>								
-                            </li>
-*/
-
-.sidebar__link {position: fixed;}
 .sidebar__items {
     list-style-type: none;
-    min-width: 18px;
+    min-width: 20px;
+    min-height: 20px;
     text-align: center;
     transition: 0.2s;
+    border-radius: 50%;
+    cursor: pointer;
     
     
         &::before{
@@ -21,7 +16,6 @@
         
     }
         &:hover {
-            border-radius: 50%;
             border: 1px solid #fff;
         }
 }
