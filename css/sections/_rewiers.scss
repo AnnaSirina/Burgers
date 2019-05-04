@@ -24,7 +24,10 @@
 }
 
 
-.person__photo {
+.person__info {
+    background: url(../img/1.jpg);
+    width: 160px;
+    height: 160px;
     filter: grayscale(1);
   
 }

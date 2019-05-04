@@ -347,6 +347,9 @@ table {
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s; }
 
-.person__photo {
+.person__info {
+  background: url(../img/1.jpg);
+  width: 160px;
+  height: 160px;
   -webkit-filter: grayscale(1);
   filter: grayscale(1); }
