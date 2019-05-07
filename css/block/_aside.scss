@@ -3,7 +3,8 @@
     position: fixed;
     z-index: 100;
     top:20%;
-    left: 85%;
+    left: 80%;
+    
 
 .sidebar__items {
     list-style-type: none;
@@ -11,8 +12,10 @@
     transition: 0.2s;
     cursor: pointer;
     border-radius: 50%;
+   
 
       &::before{
+
         content: '\2022';
         color: #fff;
         align-content: center;    

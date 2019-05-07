@@ -1,21 +1,25 @@
-.order {
-    padding-right: 20px;
-
-.order__button {
-    min-width: 98px;
-    min-height: 37px;
-    background: #e45028;
+.btn { 
+    display: block; 
+    padding: 10px 15px;
     border-radius: 5px;
     font-family: 'ununtu';
     font-weight: medium;
     font-size: 13px;
     text-transform: uppercase;
-    color: #fff;
+    color: $white;
+    padding-top: 13px;
+}
+
+
+
+.header__button {
+    background: $red;
     transition: 0.2s;
+    
 
     &:hover{
         font-weight: bold;
         border: 1px solid #fff;
     }
 }
-}
+

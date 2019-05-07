@@ -1,13 +1,26 @@
-@import "../css/base/normalize.css";
+/* цвета */
+$yellow: #f9b43b;
+$black: #2f3234;
+$white: #fff;
+$red: #e45028;
+$grey: #332f34;
+
+
+
+/* base layout */
+@import "../css/base/normalize";
 @import "../css/base/fonts";
-@import "../css/base/base";
+@import "../css/base/layout";
 @import "../css/base/pages_background";
-@import "../css/sections/header.scss";
-@import "../css/sections/fp_about.scss";
-@import "../css/sections/nav_menu.scss";
-@import "../css/sections/order_button.scss";
-@import "../css/sections/next.scss";
-@import "../css/sections/aside.scss";
-@import "../css/sections/advanteges.scss";
-@import "../css/sections/header-pagetwo.scss";
-@import "../css/sections/rewiers.scss";
+
+/* blocks */
+@import "../css/block/header";
+@import "../css/block/fp__content";
+@import "../css/block/nav_menu";
+@import "../css/block/header_btn";
+@import "../css/block/section-header";
+@import "../css/block/logo";
+@import "../css/block/next";
+@import "../css/block/aside";
+@import "../css/block/best";
+@import "../css/block/reviews";

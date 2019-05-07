@@ -1,25 +1,37 @@
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-right: 115px;
+}
 
+.nav {
+    margin-right: 20px;
+}
 .nav__list {
     display: flex;
     justify-content: space-between;
+    
+    
 }
 
 .nav__item {
     &:before {
         content: '\2022';
-        color: #fff;
+        color: $white;
+        width: 4px;
     }
     &:first-child::before{
         content: '';
     }
 
-    .nav__title {
+    .nav__link {
         font-family: 'ununtu';
         font-weight: medium;
         font-size: 13px;
-        color: #fff;
+        color: $white;
         text-transform: uppercase;
-        margin: 15px;
+        margin: 12px;
     }
 
 }

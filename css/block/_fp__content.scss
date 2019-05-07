@@ -1,0 +1,26 @@
+
+.fp__content {
+    display: flex;
+    max-width: 90%;
+}
+
+.fp__pic {
+    background: url('../img/mainburger.png');
+    min-width: 480px;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+
+
+.fp__desc {
+    font-family: 'lifehack';
+    font-size: 65px;
+    color: #fff;
+    margin-top: 0;
+    line-height: 1;
+    padding-bottom: 68px;
+}
+
+.fp_about { 
+    flex: 0.8;
+}
