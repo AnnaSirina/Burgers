@@ -446,7 +446,7 @@ table {
   justify-content: center; }
 
 .team {
-  background: url("../img/team_back.jpg") center top/cover no-repeat;
+  background: url("../img/team_back.jpg") center center/cover no-repeat;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   -o-background-size: 100%; }
@@ -545,20 +545,24 @@ table {
     font-weight: bold;
     border: 1px solid #fff; }
 
-.section-header {
+.title {
   font-family: 'gagalin';
   font-size: 72px;
   color: #f9b43b;
   text-transform: uppercase;
   margin-bottom: 0; }
 
-.section-header-fp {
+.title-fp {
   margin-top: 120px; }
 
-.section-header-black {
+.title-black {
   color: #2f3234;
   text-align: center;
   margin-top: 113px; }
+
+.title-team {
+  margin-top: 113px;
+  margin-bottom: 55px; }
 
 .logo {
   margin-right: 55px; }
@@ -785,15 +789,13 @@ table {
   -ms-flex-align: center;
   align-items: center; }
 
-.accordeon__list {
-  max-width: 60%; }
-
 .accordeon__title {
   display: block;
   font-family: 'gagalin';
   font-size: 14px;
   color: #fff;
-  margin-left: 15px; }
+  margin-left: 15px;
+  margin-bottom: 25px; }
 
 .accordeon__tr {
   position: relative;
@@ -810,7 +812,11 @@ table {
 
 .accordeon__avatar {
   border-radius: 50%;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  margin-right: 25px; }
 
 .accordeon__img {
   width: 100%;
@@ -827,6 +833,9 @@ table {
   min-height: 120px;
   overflow: visible; }
 
+.accordeon__title-active {
+  color: #f9b43b; }
+
 .accordeon__desc {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -834,15 +843,15 @@ table {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  max-width: 208px;
+  margin-top: 0;
+  font-family: 'ubuntu-light';
+  font-size: 14px;
+  color: #fff; }
 
 .accordeon__prof {
   font-family: 'ubuntu';
   font-weight: bold;
-  font-size: 14px;
-  color: #fff; }
-
-.accordeon__desc {
-  font-family: 'ubuntu-light';
   font-size: 14px;
   color: #fff; }

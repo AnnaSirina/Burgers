@@ -10,16 +10,13 @@
     align-items: center;
 }
 
-
-.accordeon__list {
-    max-width: 60%;
-}
 .accordeon__title {
     display: block;
     font-family: 'gagalin';
     font-size: 14px;
     color: $white;
     margin-left: 15px;
+    margin-bottom: 25px;
 } 
 
 .accordeon__tr {
@@ -40,13 +37,16 @@
 .accordeon__avatar {
     border-radius: 50%;
     overflow: hidden;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat; 
+    margin-right: 25px;
 }
 
 .accordeon__img {
     width: 100%;
     height: 100%;
 }
-
 .accordeon__hidden {
     display: flex; 
     height: 0;
@@ -56,10 +56,22 @@
 .accordeon__hidden-active {
     min-height: 120px;
     overflow: visible;
+
 }
+
+
+.accordeon__title-active {
+    color: $yellow;
+}
+
 .accordeon__desc {
     display: flex;
     flex-direction: column;
+    max-width: 208px;
+    margin-top: 0;
+    font-family: 'ubuntu-light';
+    font-size: 14px;
+    color: $white;
 }
 
 .accordeon__prof {
@@ -69,11 +81,8 @@
     color: $white;
 }
 
-.accordeon__desc {
-    font-family: 'ubuntu-light';
-    font-size: 14px;
-    color: $white;
-}
+
+
 
 
 
