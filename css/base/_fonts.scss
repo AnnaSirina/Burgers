@@ -14,7 +14,7 @@
     font-family: 'ubuntu-light';
     src: url('fonts/ubuntu-light-webfont.woff2') format('woff2'),
          url('fonts/ubuntu-light-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: lighter;
     font-style: normal;
 
 }
@@ -23,10 +23,10 @@
 
 
 @font-face {
-    font-family: 'ubuntu';
+    font-family: 'ubuntu-medium';
     src: url('fonts/ubuntu-medium-webfont.woff2') format('woff2'),
          url('fonts/ubuntu-medium-webfont.woff') format('woff');
-    font-weight: medium;
+    font-weight: normal;
     font-style: normal;
 
 }
@@ -48,7 +48,7 @@
     font-family: 'lifehack';
     src: url('fonts/lifehack_medium-webfont.woff2') format('woff2'),
          url('fonts/lifehack_medium-webfont.woff') format('woff');
-    font-weight: medium;
+    font-weight: normal;
     font-style: normal;
 
 }

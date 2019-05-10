@@ -1,12 +1,11 @@
-.header__nav {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    padding-right: 115px;
-}
+
 
 .nav {
     margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    
 }
 .nav__list {
     display: flex;
@@ -26,8 +25,7 @@
     }
 
     .nav__link {
-        font-family: 'ununtu';
-        font-weight: medium;
+        font-family: 'ununtu-medium';
         font-size: 13px;
         color: $white;
         text-transform: uppercase;

@@ -1,14 +1,6 @@
-/* цвета */
-$yellow: #f9b43b;
-$black: #2f3234;
-$white: #fff;
-$red: #e45028;
-$grey: #332f34;
-
-
-
 /* base layout */
 @import "../css/base/normalize";
+@import "../css/base/variables";
 @import "../css/base/fonts";
 @import "../css/base/layout";
 @import "../css/base/pages_background";
@@ -24,3 +16,4 @@ $grey: #332f34;
 @import "../css/block/aside";
 @import "../css/block/best";
 @import "../css/block/reviews";
+@import "../css/block/team";

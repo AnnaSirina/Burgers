@@ -12,6 +12,8 @@
     max-height: 50%;
     padding: 0;
     margin: 0;  
+    position: relative;
+    filter: grayscale(1);
 }
 
 .reviews__pic { 
@@ -21,19 +23,13 @@
 }
 
 
-.review {
-    position: relative;
-    filter: grayscale(1);
-}
-
-
 .reviews__icon-effect {
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(#000, .8);
+    background: $grey-o;
     padding: 45px 5% 10px;
     color: $white;
     opacity: 0;
@@ -53,7 +49,8 @@
 .reviews__desc {
     margin-top: 16px;
     margin-bottom: 0;
-    font-family: 'ununtu-light';
+    font-family: 'ubuntu-light';
+    font-weight: lighter;
     font-size: 14px;
     line-height: 2.2;
     

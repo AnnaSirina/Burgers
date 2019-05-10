@@ -17,12 +17,10 @@
 				<!--разметка хэдера: лого, меню, батон-->
 					<header class="header">
 							<div class="logo">
-								<a class="logo__logo">
 									<img class="logo__img" src="./img/logo.png" alt="Mr burgers logo">
-								</a>
 							</div>
 
-							<div class="header__nav">
+							
 							<nav class="nav">
 								<ul class="nav__list">
 									<li class="nav__item nav__item--active">
@@ -49,22 +47,22 @@
 								</ul>
 							</nav>
 
-								<button type="button" class="btn header__button">Заказать</button>
-						</div>		
+								<a class="btn header__button">Заказать</a>
+								
 					</header>
 
 				<!--разметка поля с бугрером-->
 				<div class="fp__content">
 						<div class="fp__pic"></div>
 						<div class="fp__about">
-							<h1 class="section-header">Мы делаем</h1>
+							<h1 class="section-header section-header-fp">Мы делаем</h1>
 							<div class="fp__desc">натуральные бургеры</div>
 						</div>
 					</div>
 
 				<!--разметка для бокового меню-->
 				<aside class="sidebar">
-						<ur class="sidebar__list">
+						<ul class="sidebar__list">
 							<li class="sidebar__items">
 							<a class="sidebar__link"></a>								
 							</li>
@@ -89,7 +87,7 @@
 							<li class="sidebar__items">
 							<a class="sidebar__link"></a>								
 							</li>
-						</ur>
+						</ul>
 					</aside>
 
 					<!--разметка для слайдера-->
@@ -126,180 +124,155 @@
 					</div> 	
 				</div>
 			</section>
-
-			
-
+<!--
+			Секция Команда
+			<section class="section team">
+				<div class="container-team">
+						<div class="accordeon">
+							<h2 class="section-header">Команда</h2>
+							<ul class="accordeon__list">
+								<li class="accordeon__items">
+									<a class="accordeon__tr"></a>	
+									<button type="button" class="accordeon__title">Дэниэль Редклиф</button>
+									<div class="accordeon__hidden">
+										<div class="accordeon__avatar">
+											<img src="./img/aphex.jpg" alt="" class="accordeon__img">
+										</div>
+										<div class="accordeon__desc">
+										<h4 class="accordeon__prof">Оператор</h4>
+										<p class="accordeon__desc">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+										</div>
+									</div>
+								</li>
+								<li class="accordeon__items">
+										<a class="accordeon__tr"></a>
+										<button type="button" class="accordeon__title">Дэниэль Редклиф</button>
+									<div class="accordeon__hidden accordeon__hidden-active">
+										<div class="accordeon__avatar">
+											<img src="./img/aphex.jpg" alt="" class="accordeon__img">
+										</div>
+										<div class="accordeon__desc">
+										<h4 class="accordeon__prof">Оператор</h4>
+										<p class="accordeon__desc">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+										</div>
+									</div>
+								</li>
+								<li class="accordeon__items">
+										<a class="accordeon__tr"></a>
+										<button type="button" class="accordeon__title">Ричард Джеймс</button>
+										<div class="accordeon__hidden">
+											<div class="accordeon__avatar">
+												<img src="./img/aphex.jpg" alt="" class="accordeon__img">
+											</div>
+											<div class="accordeon__desc">
+											<h4 class="accordeon__prof">Оператор</h4>
+											<p class="accordeon__desc">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+											</div>
+										</div>
+								</li>
+								<li class="accordeon__items">
+										<a class="accordeon__tr"></a>
+										<button type="button" class="accordeon__title">Ричард Джеймс</button>
+										<div class="accordeon__hidden">
+											<div class="accordeon__avatar">
+												<img src="./img/aphex.jpg" alt="" class="accordeon__img">
+											</div>
+											<div class="accordeon__desc">
+											<h4 class="accordeon__prof">Оператор</h4>
+											<p class="accordeon__desc">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+											</div>
+										</div>
+								</li>
+							</ul>
+						</div>
+				</div>
+			</section>
+		-->
 
 			<!--Секция отзывов-->
 			<section class="reviews">
 				<div class="container-fluid">
 						<ul class="reviews__list">
-							<li class="reviews__items review">
+							<li class="reviews__items">
 								<img src="./img/1.jpg" class="reviews__pic" alt="отзыв клиента Мария">
 								<div class="reviews__icon-effect">
 									<h3 class="reviews__name">Константин Спилберг</h3>
-									<div class="reviews__text">
-									<p class="reviews__desc">А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
+									<div class="reviews__desc">
+										А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 									</div>
 									<button type="button" class="btn btn-black">Подробнее</button>
 								</div>								  
 							</li> 
-							<li class="reviews__items review">
+							<li class="reviews__items">
 								<img src="./img/2.jpg" class="reviews__pic" alt="отзыв клиента Мария">
 								<div class="reviews__icon-effect">
 									<h3 class="reviews__name">Константин Спилберг</h3>
-									<div class="reviews__text">
-									<p class="reviews__desc">А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
+									<div class="reviews__desc">
+										А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 									</div>
 									<button type="button" class="btn btn-black">Подробнее</button>
 								</div>								  
 							</li> 
-							<li class="reviews__items review">
+							<li class="reviews__items">
 								<img src="./img/3.jpg" class="reviews__pic" alt="отзыв клиента Мария">
 								<div class="reviews__icon-effect">
 									<h3 class="reviews__name">Константин Спилберг</h3>
-									<div class="reviews__text">
-									<p class="reviews__desc">А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
+									<div class="reviews__desc">
+										А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 									</div>
 									<button type="button" class="btn btn-black">Подробнее</button>
 								</div>								  
 							</li> 
-							<li class="reviews__items review">
+							<li class="reviews__items">
 								<img src="./img/4.jpg" class="reviews__pic" alt="отзыв клиента Мария">
 								<div class="reviews__icon-effect">
 									<h3 class="reviews__name">Константин Спилберг</h3>
-									<div class="reviews__text">
-									<p class="reviews__desc">А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
+									<div class="reviews__desc">
+										А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 									</div>
 									<button type="button" class="btn btn-black">Подробнее</button>
 								</div>								  
 							</li> 
-							<li class="reviews__items review">
+							<li class="reviews__items">
 								<img src="./img/5.jpg" class="reviews__pic" alt="отзыв клиента Мария">
 								<div class="reviews__icon-effect">
 									<h3 class="reviews__name">Константин Спилберг</h3>
-									<div class="reviews__text">
-									<p class="reviews__desc">А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
+									<div class="reviews__desc">
+										А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 									</div>
 									<button type="button" class="btn btn-black">Подробнее</button>
 								</div>								  
 							</li> 
-							<li class="reviews__items review">
+							<li class="reviews__items">
 								<img src="./img/6.jpg" class="reviews__pic" alt="отзыв клиента Мария">
 								<div class="reviews__icon-effect">
 									<h3 class="reviews__name">Константин Спилберг</h3>
-									<div class="reviews__text">
-									<p class="reviews__desc">А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
+									<div class="reviews__desc">
+										А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 									</div>
 									<button type="button" class="btn btn-black">Подробнее</button>
 								</div>								  
 							</li> 
-							<li class="reviews__items review">
+							<li class="reviews__items">
 								<img src="./img/7.jpg" class="reviews__pic" alt="отзыв клиента Мария">
 								<div class="reviews__icon-effect">
 									<h3 class="reviews__name">Константин Спилберг</h3>
-									<div class="reviews__text">
-									<p class="reviews__desc">А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
+									<div class="reviews__desc">
+										А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 									</div>
 									<button type="button" class="btn btn-black">Подробнее</button>
 								</div>								  
 							</li> 
-							<li class="reviews__items review">
+							<li class="reviews__items">
 								<img src="./img/8.jpg" class="reviews__pic" alt="отзыв клиента Мария">
 								<div class="reviews__icon-effect">
 									<h3 class="reviews__name">Константин Спилберг</h3>
-									<div class="reviews__text">
-									<p class="reviews__desc">А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
+									<div class="reviews__desc">
+									А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 									</div>
 									<button type="button" class="btn btn-black">Подробнее</button>
 								</div>								  
 							</li> 
-
-
-<!--
-
-
-								<li class="rewiers__items">
-									<div class="rewiers__avatar">
-										<img src="./img/1.jpg" class="rewiers__pic" alt="">
-										<div class="rewiers__icon-effect">
-											<h3 class="rewiers__name">Константин Спилберг</h3>
-											<p class="rewiers__desc">А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
-											<button type="button" class="rewiers__more">Подробнее</button>
-										</div>
-									</div>									  
-								</li> 
-								<li class="rewiers__items">
-									<div class="rewiers__avatar">
-										<img src="./img/2.jpg" class="rewiers__pic" alt="">
-										<div class="rewiers__icon-effect">
-											<h3 class="rewiers__name">Константин Спилберг</h3>
-											<p class="rewiers__desc">А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
-											<button type="button" class="rewiers__more">Подробнее</button>
-										</div>
-									</div>		  
-								</li> 
-								<li class="rewiers__items">
-									<div class="rewiers__avatar">
-										<img src="./img/3.jpg" class="rewiers__pic" alt="">
-										<div class="rewiers__icon-effect">
-											<h3 class="rewiers__name">Константин Спилберг</h3>
-											<p class="rewiers__desc">А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
-											<button type="button" class="rewiers__more">Подробнее</button>
-										</div>
-									</div>		  
-								</li> 
-								<li class="rewiers__items">
-									<div class="rewiers__avatar">
-										<img src="./img/4.jpg" class="rewiers__pic" alt="">
-										<div class="rewiers__icon-effect">
-											<h3 class="rewiers__name">Константин Спилберг</h3>
-											<p class="rewiers__desc">А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
-											<button type="button" class="rewiers__more">Подробнее</button>
-										</div>
-									</div>		  
-								</li> 
-								<li class="rewiers__items">
-									<div class="rewiers__avatar">
-										<img src="./img/5.jpg" class="rewiers__pic" alt="">
-										<div class="rewiers__icon-effect">
-											<h3 class="rewiers__name">Константин Спилберг</h3>
-											<p class="rewiers__desc">А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
-											<button type="button" class="rewiers__more">Подробнее</button>
-										</div>
-									</div>		  
-								</li> 
-								<li class="rewiers__items">
-									<div class="rewiers__avatar">
-										<img src="./img/6.jpg" class="rewiers__pic" alt="">
-										<div class="rewiers__icon-effect">
-											<h3 class="rewiers__name">Константин Спилберг</h3>
-											<p class="rewiers__desc">А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
-											<button type="button" class="rewiers__more">Подробнее</button>
-										</div>
-									</div>		  
-								</li> 
-								<li class="rewiers__items">
-									<div class="rewiers__avatar">
-										<img src="./img/7.jpg" class="rewiers__pic" alt="">
-										<div class="rewiers__icon-effect">
-											<h3 class="rewiers__name">Константин Спилберг</h3>
-											<p class="rewiers__desc">А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
-											<button type="button" class="rewiers__more">Подробнее</button>
-										</div>
-									</div>		  
-								</li> 
-								<li class="rewiers__items">
-									<div class="rewiers__avatar">
-										<img src="./img/8.jpg" class="rewiers__pic" alt="">
-										<div class="rewiers__icon-effect">
-											<h3 class="rewiers__name">Константин Спилберг</h3>
-											<p class="rewiers__desc">А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
-											<button type="button" class="rewiers__more">Подробнее</button>
-										</div>
-									</div>		  
-								</li> 
-								-->	
 					</ul>
 				</div>
 			
