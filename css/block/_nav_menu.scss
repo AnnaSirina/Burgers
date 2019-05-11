@@ -1,0 +1,35 @@
+
+
+.nav {
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    
+}
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.nav__item {
+    &:before {
+        content: '\2022';
+        color: $white;
+        width: 4px;
+    }
+    &:first-child::before{
+        content: '';
+    }
+
+    .nav__link {
+        font-family: 'ununtu-medium';
+        font-size: 13px;
+        color: $white;
+        text-transform: uppercase;
+        margin: 12px;
+    }
+
+}
