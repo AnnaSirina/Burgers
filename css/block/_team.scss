@@ -1,3 +1,7 @@
+.team {
+    position: relative;
+}
+
 .accordeon {
     position: absolute;
     top: 0;
@@ -10,31 +14,25 @@
     align-items: center;
 }
 
-.accordeon__title {
+
+.team__link {
+    position: relative;
+    cursor: pointer;
     display: block;
     font-family: 'gagalin';
     font-size: 14px;
     color: $white;
     margin-left: 15px;
     margin-bottom: 25px;
-} 
-
-.accordeon__tr {
-    position: relative;
-    cursor: pointer;
 }
 
-.accordeon__tr::before {
-    content: '';
-    position: absolute; 
-    border: 8px solid transparent; 
-    border-top: 8px solid  $white; 
-    top: 0;
-    left: 0;
-    margin-top: 5px;
+.team__link::before {
+    content: '\25BC';
+    color: $white;
+    margin-right: 5px; 
   }
 
-.accordeon__avatar {
+.team__avatar {
     border-radius: 50%;
     overflow: hidden;
     width: 100px;
@@ -43,28 +41,33 @@
     margin-right: 25px;
 }
 
-.accordeon__img {
+.team__img {
     width: 100%;
     height: 100%;
 }
-.accordeon__hidden {
+
+.team__hidden {
     display: flex; 
     height: 0;
     overflow: hidden;
 }
 
-.accordeon__hidden-active {
+.team__hidden-active {
     min-height: 120px;
     overflow: visible;
-
 }
 
 
-.accordeon__title-active {
+.team__link-active {
     color: $yellow;
 }
 
-.accordeon__desc {
+.team__link-active::before {
+    content: '\25B2'; 
+    color: $yellow; 
+}
+
+.team__desc {
     display: flex;
     flex-direction: column;
     max-width: 208px;
@@ -74,7 +77,7 @@
     color: $white;
 }
 
-.accordeon__prof {
+.team__prof {
     font-family: 'ubuntu';
     font-weight: bold;
     font-size: 14px;

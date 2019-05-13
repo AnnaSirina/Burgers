@@ -1,4 +1,4 @@
-.title {
+.section__title {
     font-family: 'gagalin';
     font-size: 72px;
     color: $yellow;
@@ -6,17 +6,17 @@
     margin-bottom: 0;
 }
 
-.title-fp {
+.section__title-fp {
     margin-top: 120px;
 }
 
-.title-black { 
+.section__title-black { 
 	color: $black;
 	text-align: center;
 	margin-top: 113px;
     }
     
-    .title-team {
-        margin-top: 113px;
-        margin-bottom: 55px;
-    }
+.section__title-team {
+    margin-top: 113px;
+    margin-bottom: 55px;
+}

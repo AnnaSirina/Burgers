@@ -2,8 +2,9 @@
 .next {
     display: flex;
     justify-content: center;
-    margin-top: 46px;
-    
+    bottom: 0;
+    right: 50%;
+    position: absolute; 
 }
 
 .next__page {

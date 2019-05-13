@@ -4,7 +4,7 @@
     height: 100%;
 }
 
-.reviews__items {
+.reviews__item {
     display: flex; 
     flex-direction: column;
     align-items: flex-start;
@@ -23,20 +23,20 @@
 }
 
 
-.reviews__icon-effect {
+.reviews__icon-showeffect {
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
     background: $grey-o;
-    padding: 45px 5% 10px;
+    padding: 45px 15px 10px 15px;
     color: $white;
     opacity: 0;
     transition: 0.5s;
 }
 
-.reviews__icon-effect:hover {
+.reviews__icon-showeffect:hover {
     opacity: 1;
 }
 

@@ -365,16 +365,25 @@ body {
 
 .wrapper {
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 .container {
   max-width: 1100px;
   height: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-line-pack: center;
+  align-content: center; }
 
-.section {
-  height: 100vh;
-  min-height: 650px; }
+.container-fp {
+  position: relative; }
 
 .container-fluid {
   width: 100%;
@@ -383,8 +392,11 @@ body {
 
 .container-team {
   width: 100%;
+  height: 100vh; }
+
+.section {
   height: 100vh;
-  position: relative; }
+  min-height: 650px; }
 
 .aside {
   display: -webkit-box;
@@ -520,7 +532,7 @@ table {
   content: ''; }
 
 .nav__item .nav__link {
-  font-family: 'ununtu-medium';
+  font-family: 'ubuntu-medium';
   font-size: 13px;
   color: #fff;
   text-transform: uppercase;
@@ -530,7 +542,7 @@ table {
   display: block;
   padding: 10px 15px;
   border-radius: 5px;
-  font-family: 'ununtu-medium';
+  font-family: 'ubuntu-medium';
   font-size: 13px;
   text-transform: uppercase;
   color: #fff;
@@ -545,22 +557,22 @@ table {
     font-weight: bold;
     border: 1px solid #fff; }
 
-.title {
+.section__title {
   font-family: 'gagalin';
   font-size: 72px;
   color: #f9b43b;
   text-transform: uppercase;
   margin-bottom: 0; }
 
-.title-fp {
+.section__title-fp {
   margin-top: 120px; }
 
-.title-black {
+.section__title-black {
   color: #2f3234;
   text-align: center;
   margin-top: 113px; }
 
-.title-team {
+.section__title-team {
   margin-top: 113px;
   margin-bottom: 55px; }
 
@@ -574,7 +586,9 @@ table {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 46px; }
+  bottom: 0;
+  right: 50%;
+  position: absolute; }
 
 .next__page {
   background: url("../img/scroll.png");
@@ -615,8 +629,8 @@ table {
   position: fixed;
   z-index: 100;
   top: 20%;
-  left: 87%; }
-  .sidebar .sidebar__items {
+  right: 10%; }
+  .sidebar .sidebar__item {
     list-style-type: none;
     text-align: center;
     -webkit-transition: 0.2s;
@@ -624,21 +638,21 @@ table {
     transition: 0.2s;
     cursor: pointer;
     border-radius: 50%; }
-    .sidebar .sidebar__items::before {
+    .sidebar .sidebar__item::before {
       content: '\2022';
       color: #fff;
       -ms-flex-line-pack: center;
       align-content: center; }
-    .sidebar .sidebar__items:hover {
+    .sidebar .sidebar__item:hover {
       border: 1px solid #fff; }
 
-.best__advantages {
+.advantages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 20px; }
 
-.best__list {
+.advantages__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -646,7 +660,7 @@ table {
   flex-wrap: wrap;
   text-align: center; }
 
-.best__items {
+.advantages__item {
   max-width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -660,13 +674,13 @@ table {
   align-items: center;
   padding-left: 20px; }
 
-.best__logo {
+.advantages__logo {
   min-width: 100px;
   min-height: 100px;
   position: relative;
   margin-bottom: 24px; }
 
-.best__logo:after {
+.advantages__logo:after {
   content: "";
   display: block;
   position: absolute;
@@ -681,24 +695,24 @@ table {
   height: 85px;
   background-position: -5px -5px; }
 
-.best__items:first-child .best__logo:after {
+.advantages__item:first-child .advantages__logo:after {
   width: 97px;
   height: 89px;
   background-position: -88px -5px; }
 
-.best__items:last-child .best__logo:after {
+.advantages__item:last-child .advantages__logo:after {
   width: 88px;
   height: 75px;
   background-position: -195px -5px; }
 
-.best__title {
+.advantages__title {
   font-family: 'lifehack';
   font-size: 24px;
   color: #2f3234;
   margin: 0;
   margin-bottom: 10px; }
 
-.best__description {
+.advantages__description {
   font-family: 'ubuntu-light';
   font-size: 14px;
   color: #2f3234;
@@ -713,7 +727,7 @@ table {
   flex-wrap: wrap;
   height: 100%; }
 
-.reviews__items {
+.reviews__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -738,21 +752,21 @@ table {
   width: 100%;
   height: 100%; }
 
-.reviews__icon-effect {
+.reviews__icon-showeffect {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.8);
-  padding: 45px 5% 10px;
+  padding: 45px 15px 10px 15px;
   color: #fff;
   opacity: 0;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
 
-.reviews__icon-effect:hover {
+.reviews__icon-showeffect:hover {
   opacity: 1; }
 
 .reviews__name {
@@ -770,6 +784,9 @@ table {
 .btn-black:hover {
   background: #332f34;
   border-radius: 5px; }
+
+.team {
+  position: relative; }
 
 .accordeon {
   position: absolute;
@@ -789,7 +806,9 @@ table {
   -ms-flex-align: center;
   align-items: center; }
 
-.accordeon__title {
+.team__link {
+  position: relative;
+  cursor: pointer;
   display: block;
   font-family: 'gagalin';
   font-size: 14px;
@@ -797,20 +816,12 @@ table {
   margin-left: 15px;
   margin-bottom: 25px; }
 
-.accordeon__tr {
-  position: relative;
-  cursor: pointer; }
+.team__link::before {
+  content: '\25BC';
+  color: #fff;
+  margin-right: 5px; }
 
-.accordeon__tr::before {
-  content: '';
-  position: absolute;
-  border: 8px solid transparent;
-  border-top: 8px solid #fff;
-  top: 0;
-  left: 0;
-  margin-top: 5px; }
-
-.accordeon__avatar {
+.team__avatar {
   border-radius: 50%;
   overflow: hidden;
   width: 100px;
@@ -818,25 +829,29 @@ table {
   background-repeat: no-repeat;
   margin-right: 25px; }
 
-.accordeon__img {
+.team__img {
   width: 100%;
   height: 100%; }
 
-.accordeon__hidden {
+.team__hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 0;
   overflow: hidden; }
 
-.accordeon__hidden-active {
+.team__hidden-active {
   min-height: 120px;
   overflow: visible; }
 
-.accordeon__title-active {
+.team__link-active {
   color: #f9b43b; }
 
-.accordeon__desc {
+.team__link-active::before {
+  content: '\25B2';
+  color: #f9b43b; }
+
+.team__desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -850,7 +865,7 @@ table {
   font-size: 14px;
   color: #fff; }
 
-.accordeon__prof {
+.team__prof {
   font-family: 'ubuntu';
   font-weight: bold;
   font-size: 14px;
