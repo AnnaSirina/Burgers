@@ -1,0 +1,47 @@
+.contacts {
+    position: relative;  
+}
+
+.contact {
+    background: $grey;
+    display:flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    margin: 0 auto; 
+}
+
+.contact__data {
+    width: 1100px;
+    display: flex;
+}
+
+
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    aling-content: flex-star;
+    width: 50%;
+    
+}
+
+.contacts__socials {
+    width: 50%;
+}
+
+.contact__list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact__adres {
+    color: $white;
+}
+
+.contact__tel {
+    color: $yellow;
+    text-decoration: none;
+}

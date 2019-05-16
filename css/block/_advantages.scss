@@ -33,26 +33,27 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: url('../img/icon.png');
+    background: url('./img/sprite.svg#meat') center center;
     background-repeat: no-repeat;
-    width: 73px;
-    height: 85px;
-    background-position: -5px -5px;
+    width: 96px;
+    height: 89px;
    
 }
 
 
 .advantages__item:first-child .advantages__logo:after {
-    width: 97px;
-    height: 89px;
-    background-position: -88px -5px;
+    background: url('./img/sprite.svg#hand');
+    background-repeat: no-repeat;
+    width: 73px;
+    height: 85.875px;
 }
 
 
 .advantages__item:last-child .advantages__logo:after {
+    background: url('./img/sprite.svg#natural');
+    background-repeat: no-repeat;
     width: 88px;
     height: 75px;
-    background-position: -195px -5px;
 }
 
 
