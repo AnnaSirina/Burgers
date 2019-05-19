@@ -4,6 +4,10 @@
     color: $yellow;
     text-transform: uppercase;   
     margin-bottom: 0;
+
+    @include phones {
+        font-size: rem(50px);
+    }
 }
 
 .section__title-fp {
@@ -17,18 +21,37 @@
 .section__title-black { 
 	color: $black;
 	text-align: center;
-	margin-top: rem(110px);
+    margin-top: rem(110px);
+    
+    @include phones {
+        font-size: rem(60px);
+    }
     }
     
 .section__title-team {
-    margin-top: rem(113px);
-    margin-bottom: rem(55px);
+    margin-top: rem(100px);
+    margin-bottom: rem(30px);
+
+    @include tablets {
+        margin-top: 0;
+    }
+    @include phones {
+        font-size: rem(62px);
+    }
 }
 
 .section__title-white {
- color: $white;   
+ color: $white;  
+  
 }
 
 .section__title-orange {
     margin: 0 auto;
+
+    @include tablets {
+        font-size: rem(72px);
+        text-align: center;}
+    @include phones {
+        font-size: rem(56px);
+    }
 }

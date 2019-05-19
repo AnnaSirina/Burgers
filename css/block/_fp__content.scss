@@ -3,11 +3,13 @@
     display: flex;
     max-width: 100%;
     justify-content: center;
+    align-content: center;
+    
 
     @include tablets {
         flex-direction: column;
         align-content: center;
-        padding: 0 15%;
+        padding: 15%;
     }
 }
 
@@ -28,12 +30,16 @@
     margin-top: 0;
     line-height: 1;
     padding-bottom: rem(68px);
+
+    @include phones {
+        font-size: rem(40px);
+    }
 }
 
 .fp__burger {
     max-width: 100%;
 
     @include tablets {
-        max-width: 70%;
+        max-width: 80%;
       }
 }

@@ -124,8 +124,10 @@
 												<use xlink:href="./img/sprite.svg#meat"></use>
 									 </svg> 
 								</div>
+								<div class="advanteges__desc">
 								<h3 class="advantages__title">100% свежее мясо</h3>
 								<p class="advantages__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
+								</div>
 							</li>
 							<li class="advantages__item">
 									<div class="advantages__logo">
@@ -133,17 +135,21 @@
 													<use xlink:href="./img/sprite.svg#hand"></use>
 										 </svg> 
 									</div>
-									<h3 class="advantages__title">Ручная сборка</h4>
+									<div class="advanteges__desc">
+									<h3 class="advantages__title">Ручная сборка</h3>
 									<p class="advantages__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</p>
-							</li>
+									</div>
+								</li>
 							<li class="advantages__item">
 									<div class="advantages__logo">
 											<svg class="icon icon-natural">
 													<use xlink:href="./img/sprite.svg#natural"></use>
 										 </svg> 
 									</div>
+									<div class="advanteges__desc">
 									<h3 class="advantages__title">Натуральные ингредиенты</h3>
 									<p class="advantages__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p>
+									</div>
 								</li>
 						</ul>	
 					</div> 	
@@ -160,51 +166,51 @@
 						<div class="accordeon__team">
 							<h2 class="section__title section__title-team">Команда</h2>
 							<ul class="team__list">
-								<li class="team__items">
-									<a class="team__link">Ричард Джеймс</a>
+								<li class="team__item">
+									<a class="team__link">Дэниэль Рэдклиф</a>
 									<div class="team__hidden">
 										<div class="team__avatar">
 											<img src="./img/aphex.jpg" alt="" class="team__img">
 										</div>
 										<div class="team__desc">
 										<h4 class="team__prof">Оператор</h4>
-										<p class="team__desc">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+										<p class="team__text">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
 										</div>
 									</div>
 								</li>
-								<li class="team__items">
-									<a class="team__link team__link-active">Дэниэль Редклиф</a>
+								<li class="team__item">
+									<a class="team__link team__link-active">Ричард Джеймс</a>
 									<div class="team__hidden team__hidden-active">
 										<div class="team__avatar">
 											<img src="./img/aphex.jpg" alt="" class="team__img">
 										</div>
 										<div class="team__desc">
 										<h4 class="team__prof">Оператор</h4>
-										<p class="team__desc">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+										<p class="team__text">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
 										</div>
 									</div>
 								</li>
-								<li class="team__items">
-									<a class="team__link">Ричард Джеймс</a>
+								<li class="team__item">
+									<a class="team__link">Джейк Флинн</a>
 									<div class="team__hidden">
 										<div class="team__avatar">
 											<img src="./img/aphex.jpg" alt="" class="team__img">
 										</div>
 										<div class="team__desc">
 										<h4 class="team__prof">Оператор</h4>
-										<p class="team__desc">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+										<p class="team__text">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
 										</div>
 									</div>
 								</li>
-								<li class="team__items">
-									<a class="team__link">Ричард Джеймс</a>
+								<li class="team__item">
+									<a class="team__link">Николай Иванов</a>
 									<div class="team__hidden">
 										<div class="team__avatar">
 											<img src="./img/aphex.jpg" alt="" class="team__img">
 										</div>
 										<div class="team__desc">
 										<h4 class="team__prof">Оператор</h4>
-										<p class="team__desc">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+										<p class="team__text">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
 										</div>
 									</div>
 								</li>
@@ -264,6 +270,7 @@
 										А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 									</div>
 									<button type="button" class="btn btn-black">Подробнее</button>
+									<button type="button" class="btn btn-hidden">Читать отзыв</button>
 								</div>								  
 							</li> 
 							<li class="reviews__item">
@@ -403,20 +410,11 @@
 								</label>
 
 
-								<!--<input class="order__check" id="call" name="call" type="checkbox"  value="checked"/>
-								<span class="order__check-custom"></span>
-								<label class="order-check-lbl" for="call">Не перезванивать</label>-->
 							</div>	
 							<div class="order__button">
-								<button class="order__btn order__btn-submit" type="submit">Заказать</button> 
-								<button class="order__btn order__btn-reset">Очистить</button> 
+								<button class="order__btn-submit" type="submit">Заказать</button> 
+								<button class="order__btn-reset" type="reset">Очистить</button> 
 							</div>	
-							   
-								
-								
-
-								 
-							
 						</div>
 					</form>
 				</div>

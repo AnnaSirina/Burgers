@@ -8,12 +8,18 @@
     display: flex; 
     flex-direction: column;
     align-items: flex-start;
-    min-width: 25%;
-    max-height: 50%;
+    width: 25%;
+    height: 50%;
     padding: 0;
     margin: 0;  
     position: relative;
     filter: grayscale(1);
+
+    @include tablets {
+        width: 50%;
+        height: 25%;
+        text-align: center;
+    }
 }
 
 .reviews__pic { 
@@ -43,6 +49,10 @@
 .reviews__name {
     font-family: 'gagalin';
     font-size: rem(14px);
+
+    @include phones {
+        font-size: rem(30px);
+    }
     
 }
 
@@ -53,7 +63,21 @@
     font-weight: lighter;
     font-size: rem(14px);
     line-height: 2.2;
+
+    @include phones {
+        display: none;
+    }
     
+}
+.btn-black {
+    @include tablets {
+        align-items: center;
+        margin: rem(15px) auto;
+
+    }
+    @include phones {
+        display: none;
+    }
 }
 
 .btn-black:hover {
@@ -61,4 +85,17 @@
         border-radius: 5px;
 }
 
+.btn-hidden {
+    display: none;
+    @include phones {
+        display: block;
+        margin: 0 auto;
+        font-size: rem(16px);
+    }
+}
 
+
+.btn-hidden:hover {
+    background: $grey;
+    border-radius: 5px;
+}
