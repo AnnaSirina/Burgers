@@ -1,16 +1,16 @@
 @function rem($px) {
-    @return $px / 16px + 0rem;
+    @return $px / 16px+0rem;
 }
 
 
 @mixin tablets {
-    @media screen and (max-width: $tablet ) {
-        @content; 
+    @media screen and (max-width: $tablet) {
+        @content;
     }
 }
 
 @mixin phones {
-    @media screen and (max-width: $phone ) {
-        @content; 
+    @media screen and (max-width: $phone) {
+        @content;
     }
 }

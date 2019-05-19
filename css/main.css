@@ -355,7 +355,8 @@ template {
   html {
     font-size: 0.8125rem; } }
 
-html, body {
+html,
+body {
   height: 100%; }
 
 body {
@@ -462,7 +463,11 @@ button {
   background: transparent;
   cursor: pointer; }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: normal;
   margin-top: 0; }
 
@@ -563,10 +568,12 @@ table {
       align-content: center;
       padding: 15%; } }
 
-.fp__pic, .fp__about {
+.fp__pic,
+.fp__about {
   width: 50%; }
   @media screen and (max-width: 768px) {
-    .fp__pic, .fp__about {
+    .fp__pic,
+    .fp__about {
       width: 100%;
       text-align: center; } }
 
@@ -579,13 +586,13 @@ table {
   padding-bottom: 4.25rem; }
   @media screen and (max-width: 480px) {
     .fp__desc {
-      font-size: 2.5rem; } }
+      font-size: 3.875rem; } }
 
 .fp__burger {
   max-width: 100%; }
   @media screen and (max-width: 768px) {
     .fp__burger {
-      max-width: 80%; } }
+      max-width: 90%; } }
 
 .nav {
   margin-right: 1.25rem;
@@ -650,7 +657,7 @@ table {
   margin-bottom: 0; }
   @media screen and (max-width: 480px) {
     .section__title {
-      font-size: 3.125rem; } }
+      font-size: 3.875rem; } }
 
 .section__title-fp {
   margin-top: 7.5rem; }
@@ -704,12 +711,7 @@ table {
   position: absolute; }
 
 .next__page {
-  background: url("../img/sprite.svg#arrow");
-  background-position: center center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  min-width: 10.625rem;
-  min-height: 6.25rem; }
+  cursor: pointer; }
 
 .next__page:hover {
   -webkit-animation: pulsing 2s infinite;
@@ -1126,7 +1128,8 @@ table {
     .accordeon__menu {
       left: 30%; } }
 
-.menu__title, .menu__hidden {
+.menu__title,
+.menu__hidden {
   color: #fff; }
 
 .menu__hidden {
@@ -1278,7 +1281,8 @@ table {
       padding: 5%;
       margin-top: 0.625rem; } }
 
-.order__col1, .order__col2 {
+.order__col1,
+.order__col2 {
   width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1288,7 +1292,8 @@ table {
   -ms-flex-direction: column;
   flex-direction: column; }
   @media screen and (max-width: 768px) {
-    .order__col1, .order__col2 {
+    .order__col1,
+    .order__col2 {
       width: 100%; } }
 
 .order__label {
@@ -1314,7 +1319,10 @@ table {
   height: 100%;
   border: none; }
 
-.order__list, .order__pay, .order__callback, .order__button {
+.order__list,
+.order__pay,
+.order__callback,
+.order__button {
   margin-top: 1.25rem; }
 
 .order__input-textarea {
@@ -1337,7 +1345,8 @@ table {
   justify-content: space-evenly;
   width: 100%; }
 
-.order__name, .order__tel {
+.order__name,
+.order__tel {
   width: 50%; }
 
 .order__numbers {
@@ -1370,7 +1379,8 @@ table {
       justify-content: center; } }
 
 @media screen and (max-width: 480px) {
-  .order__callback, .order__pay {
+  .order__callback,
+  .order__pay {
     margin: 0 auto; } }
 
 .order__list {
@@ -1399,8 +1409,8 @@ table {
 
 .order__radio-custom {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   border-radius: 50%;
   border: 1px solid #332f34;
   margin-right: 0.625rem;
@@ -1409,8 +1419,8 @@ table {
 .order__radio-custom:after {
   content: '';
   display: block;
-  width: 7px;
-  height: 7px;
+  width: 0.4375rem;
+  height: 0.4375rem;
   background-color: red;
   border-radius: 50%;
   position: absolute;
@@ -1442,10 +1452,10 @@ table {
 
 .order__check-custom {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   border: 1px solid #332f34;
-  margin-right: 10px;
+  margin-right: 0.625rem;
   position: relative; }
 
 .order__check-custom:after {
@@ -1510,20 +1520,23 @@ table {
   width: 1.5625rem;
   height: 1.5625rem; }
 
-.icon-vk, .icon-fb, .icon-inst, .icon-tw {
+.icon-vk,
+.icon-fb,
+.icon-inst,
+.icon-tw {
   fill: #303030; }
 
 .icon-tw:hover {
-  fill: white; }
+  fill: #fff; }
 
 .icon-inst:hover {
-  fill: white; }
+  fill: #fff; }
 
 .icon-vk:hover {
-  fill: white; }
+  fill: #fff; }
 
 .icon-fb:hover {
-  fill: white; }
+  fill: #fff; }
 
 .icon-arrow {
   display: inline-block;
@@ -1561,7 +1574,7 @@ table {
   background: #fff;
   width: 1.5rem;
   height: 0.3125rem;
-  border-radius: 0.1875rem; }
+  border-radius: 3px; }
 
 .menu-link__bars:before, .menu-link__bars:after {
   content: "";

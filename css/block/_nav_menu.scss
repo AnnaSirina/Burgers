@@ -1,21 +1,20 @@
-
-
 .nav {
     margin-right: rem(20px);
     display: flex;
     justify-content: space-between;
     align-content: center;
 
-@include tablets {
-    display: none;
+    @include tablets {
+        display: none;
+    }
+
 }
-    
-}
+
 .nav__list {
     display: flex;
     justify-content: space-between;
-    
-    
+
+
 }
 
 .nav__item {
@@ -24,7 +23,8 @@
         color: $white;
         width: 4px;
     }
-    &:first-child::before{
+
+    &:first-child::before {
         content: '';
     }
 

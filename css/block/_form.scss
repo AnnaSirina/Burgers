@@ -1,4 +1,3 @@
-
 .order {
     display: flex;
     justify-content: space-around;
@@ -6,24 +5,26 @@
     margin-top: rem(30px);
 
     @include tablets {
-      flex-direction: column;
-      align-items: center;
-      padding: 0 15%;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15%;
     }
 
     @include phones {
-      width: 100%;
-      padding: 5%;
-      margin-top: rem(10px);
+        width: 100%;
+        padding: 5%;
+        margin-top: rem(10px);
     }
 }
 
-.order__col1, .order__col2  {
+.order__col1,
+.order__col2 {
     width: 45%;
     display: flex;
     flex-direction: column;
+
     @include tablets {
-      width: 100%;
+        width: 100%;
     }
 }
 
@@ -32,8 +33,8 @@
     flex-direction: column;
     font-family: 'ubuntu-light';
     font-size: rem(14px);
-    margin-right: rem(20px); 
-    
+    margin-right: rem(20px);
+
 }
 
 .order__input {
@@ -43,40 +44,47 @@
     padding: rem(5px) rem(10px);
     border: rem(1px) solid #d1cfcb;
     border-radius: rem(5px);
-    width: 100%;  
+    width: 100%;
     height: 100%;
-    border: none;  
-  }
+    border: none;
+}
 
-.order__list, .order__pay, .order__callback, .order__button {
-  margin-top: rem(20px);
+.order__list,
+.order__pay,
+.order__callback,
+.order__button {
+    margin-top: rem(20px);
 }
 
 .order__input-textarea {
-  height: rem(110px);
-  resize: none;
+    height: rem(110px);
+    resize: none;
 }
 
- .order__input:focus {
-    border: 2px solid $yellow; /* Рамка при получении фокуса */
-   }
+.order__input:focus {
+    border: 2px solid $yellow;
+    /* Рамка при получении фокуса */
+}
 
-.order__street {margin-top: rem(30px);}
+.order__street {
+    margin-top: rem(30px);
+}
 
 .order__contact {
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
     width: 100%;
-    
+
 }
 
-.order__name, .order__tel {
+.order__name,
+.order__tel {
     width: 50%;
 }
 
 .order__numbers {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 
@@ -91,14 +99,15 @@
     justify-content: flex-start;
 
     @include phones {
-      justify-content: center;
+        justify-content: center;
     }
 }
 
-.order__callback, .order__pay {
-  @include phones {
-    margin: 0 auto;
-  }
+.order__callback,
+.order__pay {
+    @include phones {
+        margin: 0 auto;
+    }
 }
 
 .order__list {
@@ -106,126 +115,128 @@
     width: 100%;
 }
 
-.order__item { width: 25%;}
+.order__item {
+    width: 25%;
+}
 
 
 /*   радио батоны   */
 
 
 .order__radio {
-  display: none;
+    display: none;
 }
 
 .order__radio-lbl {
-  display: inline-flex;
-  align-items: center;
- 
+    display: inline-flex;
+    align-items: center;
+
 }
 
 .order__radio-text {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 
 .order__radio-custom {
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 1px solid $grey;
-  margin-right: rem(10px);
-  position: relative; 
+    display: block;
+    width: rem(20px);
+    height: rem(20px);
+    border-radius: 50%;
+    border: 1px solid $grey;
+    margin-right: rem(10px);
+    position: relative;
 }
 
 .order__radio-custom:after {
-  content: '';
-  display: block;
-  width: 7px;
-  height: 7px;
-  background-color: red;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  opacity: 0;
+    content: '';
+    display: block;
+    width: rem(7px);
+    height: rem(7px);
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
 }
 
-.order__radio:checked  +.order__radio-custom:after {
- opacity: 1;
+.order__radio:checked+.order__radio-custom:after {
+    opacity: 1;
 
 }
 
-.order__radio:checked +.order__radio-custom + .order__radio-text {
-opacity: 1;
-font-weight: bold;
+.order__radio:checked+.order__radio-custom+.order__radio-text {
+    opacity: 1;
+    font-weight: bold;
 }
 
 /*стилизация чекбокса*/
 
 .order__check {
-  display: none;
+    display: none;
 }
 
 .order__check-lbl {
-  display: flex;
+    display: flex;
 }
 
 .order__check-text {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 
 .order__check-custom {
-  display: block;
-  width: 20px;
-  height: 20px;
-  border: 1px solid $grey;
-  margin-right: 10px;
-  position: relative; 
+    display: block;
+    width: rem(20px);
+    height: rem(20px);
+    border: 1px solid $grey;
+    margin-right: rem(10px);
+    position: relative;
 }
 
 .order__check-custom:after {
-  content: '\2714';
-  position: absolute;
-  top: 0;
-  left: 10%;
-  right: 0;
-  bottom: 0%;
-  margin: auto;
-  opacity: 0;
+    content: '\2714';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 0;
+    bottom: 0%;
+    margin: auto;
+    opacity: 0;
 
 }
 
-.order__check:checked  +.order__check-custom:after {
- opacity: 1;
- color: red;
+.order__check:checked+.order__check-custom:after {
+    opacity: 1;
+    color: red;
 
 }
 
-.order__check:checked +.order__check-custom + .order__check-text {
-opacity: 1;
-font-weight: bold;
+.order__check:checked+.order__check-custom+.order__check-text {
+    opacity: 1;
+    font-weight: bold;
 }
 
 
 .order__btn-submit {
-  margin-right: rem(20px);
-  border: 0;
-  background: $red;
-  font-family: 'ubuntu-medium';
-  font-size: rem(13px);
-  text-transform: uppercase;
-  border-radius: rem(5px);
-  color: $white;
-  padding: rem(10px) rem(15px);
-  cursor: pointer;
+    margin-right: rem(20px);
+    border: 0;
+    background: $red;
+    font-family: 'ubuntu-medium';
+    font-size: rem(13px);
+    text-transform: uppercase;
+    border-radius: rem(5px);
+    color: $white;
+    padding: rem(10px) rem(15px);
+    cursor: pointer;
 }
 
 .order__btn-reset {
-  padding-left: 0;
-  padding-right: 0;
-  text-transform: none;
-  background: transparent;
-  color: $white;
+    padding-left: 0;
+    padding-right: 0;
+    text-transform: none;
+    background: transparent;
+    color: $white;
 }

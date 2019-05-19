@@ -1,11 +1,11 @@
 .menu {
-	position: relative;
+    position: relative;
 }
 
 .accordeon__menu {
-	display: flex;
-	filter: grayscale(1);
-	position: absolute;
+    display: flex;
+    filter: grayscale(1);
+    position: absolute;
     top: 0;
     left: 40%;
     right: 0;
@@ -20,17 +20,18 @@
     }
 }
 
-.menu__title, .menu__hidden {
-	color: #fff;
+.menu__title,
+.menu__hidden {
+    color: #fff;
 }
 
 .menu__hidden {
-	width: 0;
+    width: 0;
     overflow: hidden;
 }
 
 .menu__hidden-show {
-	width: 95%;
+    width: 95%;
     overflow: hidden;
     padding: rem(30px);
     height: 100vh;
@@ -41,8 +42,8 @@
 }
 
 .menu__list {
-	display: flex;
-	justify-content: flex-start;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .menu__items {
@@ -51,11 +52,11 @@
 }
 
 .menu__name {
-	height: 100vh;
-	display: flex;
-	justify-content: flex-end;
-	 background: $grey-o;
-	 cursor: pointer;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    background: $grey-o;
+    cursor: pointer;
 }
 
 .menu__title {
@@ -74,6 +75,6 @@
         margin: 0;
         font-size: rem(42px);
     }
-    
+
 
 }

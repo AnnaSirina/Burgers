@@ -2,32 +2,32 @@
     font-family: 'gagalin';
     font-size: rem(72px);
     color: $yellow;
-    text-transform: uppercase;   
+    text-transform: uppercase;
     margin-bottom: 0;
 
     @include phones {
-        font-size: rem(50px);
+        font-size: rem(62px);
     }
 }
 
 .section__title-fp {
-   margin-top: rem(120px);
+    margin-top: rem(120px);
 
-   @include tablets {
-       margin-top: 0;
-   }
+    @include tablets {
+        margin-top: 0;
+    }
 }
 
-.section__title-black { 
-	color: $black;
-	text-align: center;
+.section__title-black {
+    color: $black;
+    text-align: center;
     margin-top: rem(110px);
-    
+
     @include phones {
         font-size: rem(60px);
     }
-    }
-    
+}
+
 .section__title-team {
     margin-top: rem(100px);
     margin-bottom: rem(30px);
@@ -35,14 +35,15 @@
     @include tablets {
         margin-top: 0;
     }
+
     @include phones {
         font-size: rem(62px);
     }
 }
 
 .section__title-white {
- color: $white;  
-  
+    color: $white;
+
 }
 
 .section__title-orange {
@@ -50,7 +51,9 @@
 
     @include tablets {
         font-size: rem(72px);
-        text-align: center;}
+        text-align: center;
+    }
+
     @include phones {
         font-size: rem(56px);
     }

@@ -1,6 +1,6 @@
 .advantages {
     display: flex;
-    padding-top: rem(20px);    
+    padding-top: rem(20px);
 }
 
 
@@ -10,11 +10,11 @@
 
     @include phones {
         flex-direction: column;
-        
+
     }
 }
 
-.advantages__item { 
+.advantages__item {
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -28,14 +28,14 @@
         margin-bottom: rem(20px);
     }
 
-   
-    
+
+
 }
 
 .advanteges__desc {
     @include phones {
         display: block;
-        width: 65%;  
+        width: 65%;
     }
 }
 
@@ -47,6 +47,7 @@
         width: 30%;
     }
 }
+
 /*
 .advantages__logo:after {
     content: "";
@@ -92,6 +93,7 @@
     color: $black;
     margin: 0;
     margin-bottom: rem(10px);
+
     @include phones {
         font-size: rem(30px);
     }
@@ -104,6 +106,7 @@
     line-height: 2.4;
     margin: 0;
 }
+
 /*
 .advantages__title, .advantages__descriptin {
     @include phones {

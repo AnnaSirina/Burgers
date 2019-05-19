@@ -1,5 +1,5 @@
-.btn { 
-    display: block; 
+.btn {
+    display: block;
     padding: rem(10px) rem(15px);
     border-radius: 5px;
     font-family: 'ubuntu-medium';
@@ -13,11 +13,10 @@
 .header__button {
     background: $red;
     transition: 0.2s;
-    
 
-    &:hover{
+
+    &:hover {
         font-weight: bold;
         border: 1px solid #fff;
     }
 }
-

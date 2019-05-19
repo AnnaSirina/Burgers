@@ -1,21 +1,21 @@
 .contacts {
-    position: relative;  
+    position: relative;
 }
 
 .contact {
-    background: url('../img/delivery_back.jpg') center center  / cover no-repeat;
-    display:flex;
+    background: url('../img/delivery_back.jpg') center center / cover no-repeat;
+    display: flex;
     justify-content: center;
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
     display: flex;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .contact__data {
-   
+
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -34,7 +34,7 @@
     flex-direction: column;
     align-content: flex-start;
     width: 50%;
-    
+
 }
 
 .contacts__socials {

@@ -45,13 +45,13 @@
 .team__link::before {
     content: '\25BC';
     color: $white;
-    margin-right: rem(5px); 
-  }
+    margin-right: rem(5px);
+}
 
 .team__avatar {
     margin-right: rem(15px);
     margin-left: rem(30px);
-    
+
 }
 
 .team__img {
@@ -68,10 +68,10 @@
 }
 
 .team__hidden {
-    display: flex; 
+    display: flex;
     height: 0;
     overflow: hidden;
-    
+
 }
 
 .team__hidden-active {
@@ -92,8 +92,8 @@
 }
 
 .team__link-active::before {
-    content: '\25B2'; 
-    color: $yellow; 
+    content: '\25B2';
+    color: $yellow;
 }
 
 .team__text {
@@ -117,9 +117,3 @@
     font-size: rem(14px);
     color: $white;
 }
-
-
-
-
-
-

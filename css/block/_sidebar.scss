@@ -4,27 +4,27 @@
     z-index: 100;
     top: 20%;
     right: 10%;
-    
+
     @include tablets {
         display: none;
     }
 }
+
 .sidebar__item {
     list-style-type: none;
     text-align: center;
     transition: 0.2s;
     cursor: pointer;
     border-radius: 50%;
-   
 
-      &::before{
+
+    &::before {
         content: '\2022';
         color: #fff;
-        align-content: center;    
+        align-content: center;
     }
-        &:hover {
-            border: 1px solid #fff;
-        }
+
+    &:hover {
+        border: 1px solid #fff;
+    }
 }
-
-

@@ -1,73 +1,77 @@
 .icon-logo {
- 	display: inline-block;
-	width: rem(98px);
-	height: rem(74px);
+    display: inline-block;
+    width: rem(98px);
+    height: rem(74px);
 }
 
 
 .icon-vk {
-	display: inline-block;
-	width: rem(25px);
-	height: rem(25px);
+    display: inline-block;
+    width: rem(25px);
+    height: rem(25px);
 }
 
 .icon-fb {
-	display: inline-block;
-	width: rem(25px);
-	height: rem(25px);
+    display: inline-block;
+    width: rem(25px);
+    height: rem(25px);
 }
 
 
 .icon-inst {
-	display: inline-block;
-	width: rem(25px);
-	height: rem(25px);
+    display: inline-block;
+    width: rem(25px);
+    height: rem(25px);
 }
 
 
 .icon-tw {
-	display: inline-block;
-	width: rem(25px);
-	height: rem(25px);
+    display: inline-block;
+    width: rem(25px);
+    height: rem(25px);
 }
-.icon-vk, .icon-fb, .icon-inst, .icon-tw {
-	fill: $socials;
+
+.icon-vk,
+.icon-fb,
+.icon-inst,
+.icon-tw {
+    fill: $socials;
 }
 
 .icon-tw:hover {
-	fill: white;
+    fill: $white;
 }
+
 .icon-inst:hover {
-	fill: white;
-} 
-
-.icon-vk:hover{
-	fill: white;
+    fill: $white;
 }
 
-.icon-fb:hover{
-	fill: white;
+.icon-vk:hover {
+    fill: $white;
+}
+
+.icon-fb:hover {
+    fill: $white;
 }
 
 .icon-arrow {
-	display: inline-block;
-	width: rem(28px);
-	height: rem(14px);
+    display: inline-block;
+    width: rem(28px);
+    height: rem(14px);
 }
 
 
 .icon-meat {
-	width: rem(96px);
-	height: rem(89px);
+    width: rem(96px);
+    height: rem(89px);
 }
 
 .icon-hand {
-	width: rem(73px);
-	height: rem(85px);
+    width: rem(73px);
+    height: rem(85px);
 }
 
 .icon-natural {
-	width: rem(88px);
-	height: rem(75px);
+    width: rem(88px);
+    height: rem(75px);
 }
-

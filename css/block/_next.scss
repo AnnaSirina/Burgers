@@ -1,54 +1,51 @@
-                   
 .next {
     display: flex;
     justify-content: center;
     bottom: 0;
     right: 50%;
-    position: absolute; 
+    position: absolute;
 }
 
 .next__page {
-    background: url('../img/sprite.svg#arrow');
-    background-position: center center;
-    background-repeat: no-repeat;
     cursor: pointer;
-    min-width: rem(170px);
-    min-height: rem(100px);
-    
 }
 
 
 .next__page:hover {
--webkit-animation: pulsing 2s infinite;
-  animation: pulsing 2s infinite;
+    -webkit-animation: pulsing 2s infinite;
+    animation: pulsing 2s infinite;
 }
 
 @-webkit-keyframes pulsing {
-  0% {
-    -webkit-transform: scale(1.0, 1.0);
-    transform: scale(1.0, 1.0);
-  }
-  50% {
-    -webkit-transform: scale(1.5, 1.5);
-    transform: scale(1.5, 1.5);
-  }
-  100% {
-    -webkit-transform: scale(1.0, 1.0);
-    transform: scale(1.0, 1.0);
-  }
+    0% {
+        -webkit-transform: scale(1.0, 1.0);
+        transform: scale(1.0, 1.0);
+    }
+
+    50% {
+        -webkit-transform: scale(1.5, 1.5);
+        transform: scale(1.5, 1.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1.0, 1.0);
+        transform: scale(1.0, 1.0);
+    }
 }
 
 @keyframes pulsing {
     0% {
         -webkit-transform: scale(1.0, 1.0);
         transform: scale(1.0, 1.0);
-      }
-      50% {
+    }
+
+    50% {
         -webkit-transform: scale(1.5, 1.5);
         transform: scale(1.5, 1.5);
-      }
-      100% {
+    }
+
+    100% {
         -webkit-transform: scale(1.0, 1.0);
         transform: scale(1.0, 1.0);
-      }
+    }
 }
