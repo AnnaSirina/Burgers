@@ -1,40 +1,34 @@
 .icon-logo {
  	display: inline-block;
-	width: 98px;
-	height: 74px;
+	width: rem(98px);
+	height: rem(74px);
 }
 
-
-.advantages__logo {
-	display: inline-block;
-	width: 96px;
-	height: 89px;
-}
 
 .icon-vk {
 	display: inline-block;
-	width: 25px;
-	height: 25px;
+	width: rem(25px);
+	height: rem(25px);
 }
 
 .icon-fb {
 	display: inline-block;
-	width: 25px;
-	height: 25px;
+	width: rem(25px);
+	height: rem(25px);
 }
 
 
 .icon-inst {
 	display: inline-block;
-	width: 25px;
-	height: 25px;
+	width: rem(25px);
+	height: rem(25px);
 }
 
 
 .icon-tw {
 	display: inline-block;
-	width: 25px;
-	height: 25px;
+	width: rem(25px);
+	height: rem(25px);
 }
 .icon-vk, .icon-fb, .icon-inst, .icon-tw {
 	fill: $grey-o;
@@ -57,40 +51,23 @@
 
 .icon-arrow {
 	display: inline-block;
-	width: 28px;
-	height: 14px;
+	width: rem(28px);
+	height: rem(14px);
 }
 
 
+.icon-meat {
+	width: rem(96px);
+	height: rem(89px);
+}
 
-
-/*
 .icon-hand {
-	width="73px" height="85.875px"
+	width: rem(73px);
+	height: rem(85px);
 }
 
 .icon-natural {
-	 width="88px" height="75.534px"
+	width: rem(88px);
+	height: rem(75px);
 }
 
-.icon-fb {
-	width="36.711px" height="36.711px" 
-}
-
-.icon-vk {
-	width="126px" height="72px"
-}
-
-.icon-inst {
-	width="36.663px" height="36.664px"
-}
-
-.icon-tw {
-	width="37.453px" height="31.21px
-}
-
-.icon-arrow {
-	width="28.685px" height="14.479px"
-}
-
-*/

@@ -1,24 +1,28 @@
 .section__title {
     font-family: 'gagalin';
-    font-size: 72px;
+    font-size: rem(72px);
     color: $yellow;
     text-transform: uppercase;   
     margin-bottom: 0;
 }
 
 .section__title-fp {
-    margin-top: 120px;
+   margin-top: rem(120px);
+
+   @include tablets {
+       margin-top: 0;
+   }
 }
 
 .section__title-black { 
 	color: $black;
 	text-align: center;
-	margin-top: 113px;
+	margin-top: rem(110px);
     }
     
 .section__title-team {
-    margin-top: 113px;
-    margin-bottom: 55px;
+    margin-top: rem(113px);
+    margin-bottom: rem(55px);
 }
 
 .section__title-white {

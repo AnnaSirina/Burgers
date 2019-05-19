@@ -20,16 +20,16 @@
     cursor: pointer;
     display: block;
     font-family: 'gagalin';
-    font-size: 14px;
+    font-size: rem(14px);
     color: $white;
-    margin-left: 15px;
-    margin-bottom: 25px;
+    margin-left: rem(15px);
+    margin-bottom: rem(25px);
 }
 
 .team__link::before {
     content: '\25BC';
     color: $white;
-    margin-right: 5px; 
+    margin-right: rem(5px); 
   }
 
 .team__avatar {
@@ -38,7 +38,7 @@
     width: 100px;
     height: 100px;
     background-repeat: no-repeat; 
-    margin-right: 25px;
+    margin-right: rem(25px);
 }
 
 .team__img {
@@ -53,7 +53,7 @@
 }
 
 .team__hidden-active {
-    min-height: 120px;
+    min-height: rem(120px);
     overflow: visible;
 }
 
@@ -70,17 +70,17 @@
 .team__desc {
     display: flex;
     flex-direction: column;
-    max-width: 208px;
+    max-width: rem(208px);
     margin-top: 0;
     font-family: 'ubuntu-light';
-    font-size: 14px;
+    font-size: rem(14px);
     color: $white;
 }
 
 .team__prof {
     font-family: 'ubuntu';
     font-weight: bold;
-    font-size: 14px;
+    font-size: rem(14px);
     color: $white;
 }
 

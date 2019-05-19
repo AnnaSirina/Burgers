@@ -30,7 +30,7 @@
     left: 0;
     bottom: 0;
     background: $grey-o;
-    padding: 45px 15px 10px 15px;
+    padding: rem(45px)  rem(15px) rem(10px)  rem(15px);
     color: $white;
     opacity: 0;
     transition: 0.5s;
@@ -42,16 +42,16 @@
 
 .reviews__name {
     font-family: 'gagalin';
-    font-size: 14px;
+    font-size: rem(14px);
     
 }
 
 .reviews__desc {
-    margin-top: 16px;
+    margin-top: rem(16px);
     margin-bottom: 0;
     font-family: 'ubuntu-light';
     font-weight: lighter;
-    font-size: 14px;
+    font-size: rem(14px);
     line-height: 2.2;
     
 }

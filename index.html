@@ -2,11 +2,11 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1100px, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Главная</title>
 		<link rel="stylesheet" href="./css/main.css">
-		<link rel="shortcut icon" href="./img/fav.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="./img/fav.ico" type="image/x-icon">		
 </head>
 <body>
 	<div class="wrapper">
@@ -52,7 +52,7 @@
 						</svg> 
 								
 
-							
+							<div class="header__menu">
 							<nav class="nav">
 								<ul class="nav__list">
 									<li class="nav__item nav__item--active">
@@ -81,11 +81,16 @@
 
 								<a class="btn header__button">Заказать</a>
 								
+								<a class="menu-link" href="">
+										<div class="menu-link__bars"></div></a>
+								</div>
 					</header>
 
 				<!--разметка поля с бугрером-->
 				<div class="fp__content">
-						<div class="fp__pic"></div>
+						<div class="fp__pic">
+							<img class="fp__burger" src="./img/mainburger.png" alt="Бургер" >
+						</div>
 						<div class="fp__about">
 							<h1 class="section__title section__title-fp">Мы делаем</h1>
 							<div class="fp__desc">натуральные бургеры</div>
@@ -115,17 +120,28 @@
 						<ul class="advantages__list">
 							<li class="advantages__item">
 								<div class="advantages__logo">
+										<svg class="icon icon-meat">
+												<use xlink:href="./img/sprite.svg#meat"></use>
+									 </svg> 
 								</div>
 								<h3 class="advantages__title">100% свежее мясо</h3>
 								<p class="advantages__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
 							</li>
 							<li class="advantages__item">
-									<div class="advantages__logo"></div>
+									<div class="advantages__logo">
+											<svg class="icon icon-hand">
+													<use xlink:href="./img/sprite.svg#hand"></use>
+										 </svg> 
+									</div>
 									<h3 class="advantages__title">Ручная сборка</h4>
 									<p class="advantages__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</p>
 							</li>
 							<li class="advantages__item">
-									<div class="advantages__logo"></div>
+									<div class="advantages__logo">
+											<svg class="icon icon-natural">
+													<use xlink:href="./img/sprite.svg#natural"></use>
+										 </svg> 
+									</div>
 									<h3 class="advantages__title">Натуральные ингредиенты</h3>
 									<p class="advantages__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p>
 								</li>

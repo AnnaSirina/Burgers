@@ -26,7 +26,7 @@
 }
 
 .menu__hidden-show {
-	min-width: 700px;
+	min-width: rem(700px);
     overflow: visible;
 }
 
@@ -37,7 +37,7 @@
 
 .menu__items {
 	display: flex;
-	max-height: 50px;
+	max-height: rem(50px);
 }
 
 .menu__name {
@@ -54,8 +54,8 @@
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
-    margin-bottom: 70px;
-    font-size: 40px;
+    margin-bottom: rem(70px);
+    font-size: rem(40px);
     font-family: 'ubuntu-medium';
     text-transform: uppercase;
 
