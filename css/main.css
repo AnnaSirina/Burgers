@@ -476,14 +476,14 @@ table {
   border-spacing: 0; }
 
 .into-page {
-  background: url("../img/first-page.jpg") center center no-repeat;
+  background: url("../img/first-page.jpg");
   background-size: cover;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   -o-background-size: 100%; }
 
 .best {
-  background: url("../img/second-page.jpg") no-repeat;
+  background: url("../img/second-page.jpg");
   background-size: cover;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
@@ -500,28 +500,30 @@ table {
   justify-content: center; }
 
 .team {
-  background: url("../img/team_back.jpg") 50% no-repeat;
+  background: url("../img/team_back.jpg");
   background-size: cover;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   -o-background-size: 100%; }
 
 .menu {
-  background: url("../img/menu_back.jpg") 50% no-repeat;
+  background: url("../img/menu_back.jpg");
   background-size: cover;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   -o-background-size: 100%; }
 
 .contacts {
-  background: url("../img/map_back.jpg") 50% no-repeat;
+  background: url("../img/map_back.jpg");
   background-size: cover;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
-  -o-background-size: 100%; }
+  -o-background-size: 100%;
+  min-height: 40.625rem; }
 
 .delivery {
-  background: url("../img/delivery_back.jpg") center center/cover no-repeat;
+  background: url("../img/delivery_back.jpg");
+  background-size: cover;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   -o-background-size: 100%; }
@@ -586,7 +588,7 @@ table {
   padding-bottom: 4.25rem; }
   @media screen and (max-width: 480px) {
     .fp__desc {
-      font-size: 3.875rem; } }
+      font-size: 3.625rem; } }
 
 .fp__burger {
   max-width: 100%; }
