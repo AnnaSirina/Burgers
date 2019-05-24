@@ -1106,7 +1106,7 @@ table {
 .menu {
   position: relative; }
 
-.accordeon__menu {
+.menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1114,20 +1114,12 @@ table {
   filter: grayscale(1);
   position: absolute;
   top: 0;
-  left: 40%;
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.8);
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start; }
+  display: flex; }
   @media screen and (max-width: 480px) {
-    .accordeon__menu {
+    .menu__list {
       left: 30%; } }
 
 .menu__title,
@@ -1166,7 +1158,7 @@ table {
   width: auto; }
 
 .menu__items.active .menu__hidden {
-  width: 300px; }
+  width: 28.125rem; }
 
 .menu__title {
   -webkit-writing-mode: vertical-rl;

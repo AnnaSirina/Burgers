@@ -2,19 +2,17 @@
     position: relative;
 }
 
-.accordeon__menu {
+.menu__list {
     display: flex;
     filter: grayscale(1);
     position: absolute;
     top: 0;
-    left: 40%;
     right: 0;
     bottom: 0;
     background: $grey-o;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
+    
+    
     @include phones {
         left: 30%;
     }
@@ -59,7 +57,7 @@
 
 
 .menu__items.active .menu__hidden {
-    width: 300px;
+    width: rem(450px);
 }
 
 .menu__title {
