@@ -23,6 +23,7 @@
 .menu__title,
 .menu__hidden {
     color: #fff;
+    
 }
 
 .menu__hidden {
@@ -49,14 +50,16 @@
 .menu__items {
     display: flex;
     height: 100vh;
+    margin: 0;
 }
 
-.menu__name {
-    height: 100vh;
-    display: flex;
-    justify-content: flex-end;
-    background: $grey-o;
-    cursor: pointer;
+.menu__items.active {
+     width: auto;
+}
+
+
+.menu__items.active .menu__hidden {
+    width: 300px;
 }
 
 .menu__title {
@@ -69,7 +72,15 @@
     font-size: rem(40px);
     font-family: 'gagalin';
     text-transform: uppercase;
-    margin: 0 rem(5px) rem(40px) rem(15px);
+    padding: 0;
+    padding-bottom: rem(20px);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    background: $grey-o;
+    cursor: pointer;
+    color: #fff;
 
     @include phones {
         margin: 0;

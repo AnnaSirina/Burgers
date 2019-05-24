@@ -1159,18 +1159,14 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh; }
-
-.menu__name {
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  background: rgba(0, 0, 0, 0.8);
-  cursor: pointer; }
+  margin: 0; }
+
+.menu__items.active {
+  width: auto; }
+
+.menu__items.active .menu__hidden {
+  width: 300px; }
 
 .menu__title {
   -webkit-writing-mode: vertical-rl;
@@ -1182,7 +1178,19 @@ table {
   font-size: 2.5rem;
   font-family: 'gagalin';
   text-transform: uppercase;
-  margin: 0 0.3125rem 2.5rem 0.9375rem; }
+  padding: 0;
+  padding-bottom: 1.25rem;
+  margin: 0;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  color: #fff; }
   @media screen and (max-width: 480px) {
     .menu__title {
       margin: 0;

@@ -231,11 +231,9 @@
 				<h2 class="section__title section__title-white">Меню</h2>
 				<div class="accordeon__menu">
 					<ul class="menu__list">
-						<li class="menu__items menu__items-active">
-							<div class="menu__name">
-								<h3 class="menu__title">Для мясоедов</h3>
-							</div>
-							<div class="menu__hidden menu__hidden-show">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+						<li class="menu__items" id="item-1">
+							<h3 class="menu__title">Для мясоедов</h3>
+							<div class="menu__hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 								do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
 								reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
@@ -246,10 +244,8 @@
 								pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
 								id est laborum.</div>
 						</li>
-						<li class="menu__items">
-							<div class="menu__name">
-								<h3 class="menu__title">Вегатерианское</h3>
-							</div>
+						<li class="menu__items" id="item-2">
+							<h3 class="menu__title">Вегатерианское</h3>
 							<div class="menu__hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 								laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
@@ -261,10 +257,8 @@
 								sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</div>
 						</li>
-						<li class="menu__items">
-							<div class="menu__name">
-								<h3 class="menu__title">Диетическое</h3>
-							</div>
+						<li class="menu__items" id="item-3">
+							<h3 class="menu__title">Диетическое</h3>
 							<div class="menu__hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 								laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
@@ -280,6 +274,7 @@
 				</div>
 			</div>
 		</section>
+		
 
 		<!--Секция отзывов-->
 		<section class="reviews">
@@ -507,3 +502,23 @@
 </body>
 
 </html>
+
+
+<script type="text/javascript">
+		const blockList = document.querySelector('.menu__list');
+			blockList.addEventListener('click', function (e) {
+				if (e.target.className === 'menu__title') {
+					e.target.parentElement.classList.toggle('active')
+					const itemId = localStorage.getItem('itemId')
+					localStorage.setItem('itemId', e.target.parentElement.id)
+
+					if (itemId !=e.target.parentElement.id) {
+						document.getElementById(itemId).classList.remove('active')
+						localStorage.removeItem('itemId')
+						LocalStorage.setItem('itemId',e.target.parentElement.id)
+					}
+				}
+			})
+
+
+	</script>
