@@ -1,22 +1,60 @@
-.title {
+.section__title {
     font-family: 'gagalin';
-    font-size: 72px;
+    font-size: rem(72px);
     color: $yellow;
-    text-transform: uppercase;   
+    text-transform: uppercase;
     margin-bottom: 0;
+
+    @include phones {
+        font-size: rem(62px);
+    }
 }
 
-.title-fp {
-    margin-top: 120px;
+.section__title-fp {
+    margin-top: rem(120px);
+
+    @include tablets {
+        margin-top: 0;
+    }
 }
 
-.title-black { 
-	color: $black;
-	text-align: center;
-	margin-top: 113px;
+.section__title-black {
+    color: $black;
+    text-align: center;
+    margin-top: rem(110px);
+
+    @include phones {
+        font-size: rem(60px);
     }
-    
-    .title-team {
-        margin-top: 113px;
-        margin-bottom: 55px;
+}
+
+.section__title-team {
+    margin-top: rem(100px);
+    margin-bottom: rem(30px);
+
+    @include tablets {
+        margin-top: 0;
     }
+
+    @include phones {
+        font-size: rem(62px);
+    }
+}
+
+.section__title-white {
+    color: $white;
+
+}
+
+.section__title-orange {
+    margin: 0 auto;
+
+    @include tablets {
+        font-size: rem(72px);
+        text-align: center;
+    }
+
+    @include phones {
+        font-size: rem(56px);
+    }
+}

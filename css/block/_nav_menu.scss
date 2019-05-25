@@ -1,17 +1,20 @@
-
-
 .nav {
-    margin-right: 20px;
+    margin-right: rem(20px);
     display: flex;
     justify-content: space-between;
     align-content: center;
-    
+
+    @include tablets {
+        display: none;
+    }
+
 }
+
 .nav__list {
     display: flex;
     justify-content: space-between;
-    
-    
+
+
 }
 
 .nav__item {
@@ -20,16 +23,17 @@
         color: $white;
         width: 4px;
     }
-    &:first-child::before{
+
+    &:first-child::before {
         content: '';
     }
 
     .nav__link {
-        font-family: 'ununtu-medium';
-        font-size: 13px;
+        font-family: 'ubuntu-medium';
+        font-size: rem(13px);
         color: $white;
         text-transform: uppercase;
-        margin: 12px;
+        margin: rem(12px);
     }
 
 }

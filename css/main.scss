@@ -1,9 +1,11 @@
 /* base layout */
 @import "../css/base/normalize";
 @import "../css/base/variables";
+@import "../css/base/mixins";
 @import "../css/base/fonts";
 @import "../css/base/layout";
 @import "../css/base/pages_background";
+
 
 /* blocks */
 @import "../css/block/header";
@@ -13,7 +15,12 @@
 @import "../css/block/title";
 @import "../css/block/logo";
 @import "../css/block/next";
-@import "../css/block/aside";
-@import "../css/block/best";
+@import "../css/block/sidebar";
+@import "../css/block/advantages";
 @import "../css/block/reviews";
 @import "../css/block/team";
+@import "../css/block/menu";
+@import "../css/block/footer";
+@import "../css/block/form";
+@import "../css/block/icon";
+@import "../css/block/menu_link";

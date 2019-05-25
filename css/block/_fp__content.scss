@@ -1,27 +1,45 @@
-
 .fp__content {
     display: flex;
-    max-width: 90%;
+    max-width: 100%;
     justify-content: center;
+    align-content: center;
+
+
+    @include tablets {
+        flex-direction: column;
+        align-content: center;
+        padding: 15%;
+    }
 }
 
-.fp__pic {
-    background: url('../img/mainburger.png');
-    min-width: 480px;
-    background-repeat: no-repeat;
-    margin-left: 78px;
+.fp__pic,
+.fp__about {
+    width: 50%;
+
+    @include tablets {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 
 .fp__desc {
     font-family: 'lifehack';
-    font-size: 65px;
+    font-size: rem(65px);
     color: #fff;
     margin-top: 0;
     line-height: 1;
-    padding-bottom: 68px;
+    padding-bottom: rem(68px);
+
+    @include phones {
+        font-size: rem(58px);
+    }
 }
 
-.fp_about { 
-    flex: 0.8;
+.fp__burger {
+    max-width: 100%;
+
+    @include tablets {
+        max-width: 90%;
+    }
 }

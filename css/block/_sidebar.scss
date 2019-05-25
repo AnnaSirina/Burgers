@@ -1,28 +1,30 @@
 .sidebar {
-    min-width: 20px;
+    min-width: rem(20px);
     position: fixed;
     z-index: 100;
     top: 20%;
-    left: 87%;
-    
+    right: 10%;
 
-.sidebar__items {
+    @include tablets {
+        display: none;
+    }
+}
+
+.sidebar__item {
     list-style-type: none;
     text-align: center;
     transition: 0.2s;
     cursor: pointer;
     border-radius: 50%;
-   
 
-      &::before{
 
+    &::before {
         content: '\2022';
         color: #fff;
-        align-content: center;    
+        align-content: center;
     }
-        &:hover {
-            border: 1px solid #fff;
-        }
-}
 
+    &:hover {
+        border: 1px solid #fff;
+    }
 }
