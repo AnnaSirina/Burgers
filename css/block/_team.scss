@@ -22,7 +22,7 @@
 }
 
 
-.team__link {
+.team__item {
     position: relative;
     cursor: pointer;
     display: block;
@@ -31,6 +31,7 @@
     color: $white;
     margin-left: rem(15px);
     margin-bottom: rem(25px);
+    cursor: pointer;
 
     @include tablets {
         text-align: center;
@@ -42,7 +43,7 @@
     }
 }
 
-.team__link::before {
+.team__item::before {
     content: '\25BC';
     color: $white;
     margin-right: rem(5px);
@@ -74,7 +75,7 @@
 
 }
 
-.team__hidden-active {
+.team__hidden.active {
     min-height: rem(120px);
     overflow: visible;
 
@@ -87,11 +88,12 @@
 }
 
 
-.team__link-active {
+.team__item.active {
     color: $yellow;
+    min-height: rem(120px);
 }
 
-.team__link-active::before {
+.team__item.active::before {
     content: '\25B2';
     color: $yellow;
 }

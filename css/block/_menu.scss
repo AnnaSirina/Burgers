@@ -70,8 +70,7 @@
     font-size: rem(40px);
     font-family: 'gagalin';
     text-transform: uppercase;
-    padding: 0;
-    padding-bottom: rem(20px);
+    padding: rem(20px);
     margin: 0;
     height: 100vh;
     display: flex;
@@ -79,6 +78,7 @@
     background: $grey-o;
     cursor: pointer;
     color: #fff;
+    padding-bottom: rem(20px);
 
     @include phones {
         margin: 0;

@@ -8,6 +8,8 @@
 	<title>Главная</title>
 	<link rel="stylesheet" href="./css/main.css">
 	<link rel="shortcut icon" href="./img/fav.ico" type="image/x-icon">
+	<script src="menu.js" defer></script>
+	<script src="team.js" defer></script>
 </head>
 
 <body>
@@ -163,6 +165,39 @@
 		</section>
 
 
+		<section class="section burgers">
+			<div class="container container-burger">
+				<a class="prev__arrow"></a>
+				<div class="burger">
+					<div class="burger__choose">
+						<a class="burger__consist">
+							<svg class="icon burger-icon">
+								<use xlink:href="./img/sprite.svg#burger-icon"></use>
+							</svg>
+							<span class="burger__short">Состав</span>
+						</a>
+						<a class="burger__kkal">
+							<svg class="icon kkal-icon">
+								<use xlink:href="./img/sprite.svg#kkal-icon"></use>
+							</svg>
+							<span class="burger__short">Ккал</span>
+							</a>
+					</div>
+						
+					<div class="burger__name">
+						<h2 class="section__title section__title-burger-white">Dark beef burger</h2>
+						<div class="burger__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ab cum rem quod, ad voluptatibus harum molestiae. Placeat tempore, fugit ullam nobis delectus, qui fugiat vero saepe deserunt ad a!</div>
+						<div class="burger__price">
+							<span class="burger__nbr">500</span>
+							<span class="burger__rub">рублей</span>
+							<button class="burger__btn" type="submit">Заказать</button>
+						</div>
+					</div>
+				</div>
+				<a class="next__arrow"></a>
+			</div>
+		</section>
+
 
 
 
@@ -172,7 +207,7 @@
 				<div class="accordeon__team">
 					<h2 class="section__title section__title-team">Команда</h2>
 					<ul class="team__list">
-						<li class="team__item">
+						<li class="team__item" id="team-1">
 							<a class="team__link">Дэниэль Рэдклиф</a>
 							<div class="team__hidden">
 								<div class="team__avatar">
@@ -184,9 +219,9 @@
 								</div>
 							</div>
 						</li>
-						<li class="team__item team__item-active">
-							<a class="team__link team__link-active">Ричард Джеймс</a>
-							<div class="team__hidden team__hidden-active">
+						<li class="team__item" id="team-2">
+							<a class="team__link">Ричард Джеймс</a>
+							<div class="team__hidden">
 								<div class="team__avatar">
 									<img src="./img/aphex.jpg" alt="" class="team__img">
 								</div>
@@ -196,7 +231,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="team__item">
+						<li class="team__item" id="team-3">
 							<a class="team__link">Джейк Флинн</a>
 							<div class="team__hidden">
 								<div class="team__avatar">
@@ -208,7 +243,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="team__item">
+						<li class="team__item" id="team-4">
 							<a class="team__link">Николай Иванов</a>
 							<div class="team__hidden">
 								<div class="team__avatar">
@@ -504,37 +539,3 @@
 </html>
 
 
-<script type="text/javascript">
-		const blockList = document.querySelector('.menu__list');
-			blockList.addEventListener('click', function (e) {
-				if (e.target.className === 'menu__title') {
-					e.target.parentElement.classList.toggle('active')
-					const itemId = localStorage.getItem('itemId')
-					localStorage.setItem('itemId', e.target.parentElement.id)
-
-					if (itemId != e.target.parentElement.id) {
-						document.getElementById(itemId).classList.remove('active')
-						localStorage.removeItem('itemId')
-						localStorage.setItem('itemId', e.target.parentElement.id)
-					}
-
-					if (window.innerWidth <= 480 && e.target.parentElement.classList.contains('active')) {
-                if (!e.target.parentElement.previousElementSibling) {
-                    console.log('object')
-                    blockList.style.transform = 'translateX(114px)'
-                } else if (!e.target.parentElement.nextElementSibling) {
-                    console.log('object')
-                    blockList.style.transform = 'translateX(0)'
-                } else {
-                    blockList.style.transform = 'translateX(57px)'
-                }
-                e.target.nextElementSibling.style.width = `${window.innerWidth - 57}px`;
-            } else {
-                blockList.style.transform = 'translateX(0)'
-            }
-        }
-
-			})
-
-
-	</script>

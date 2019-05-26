@@ -19,6 +19,13 @@
     justify-content: center;
 }
 
+.burgers {
+    background: linear-gradient(to top, $yellow 20%, #eb8c38 50%, $yellow 80%);
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+}
+
 .team {
     background: url('../img/team_back.jpg');
     background-size: cover;

@@ -43,7 +43,15 @@
 
 .section__title-white {
     color: $white;
+}
 
+.section__title-burger-white {
+    color: $white;
+    line-height: 1; 
+    
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .section__title-orange {
