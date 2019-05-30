@@ -611,7 +611,7 @@ table {
   padding-bottom: 4.25rem; }
   @media screen and (max-width: 480px) {
     .fp__desc {
-      font-size: 3.625rem; } }
+      font-size: 3.25rem; } }
 
 .fp__burger {
   max-width: 100%; }
@@ -696,11 +696,13 @@ table {
   margin-top: 6.875rem; }
   @media screen and (max-width: 480px) {
     .section__title-black {
-      font-size: 3.75rem; } }
+      font-size: 3.75rem;
+      margin-top: 0; } }
 
 .section__title-team {
   margin-top: 6.25rem;
-  margin-bottom: 1.875rem; }
+  margin-bottom: 1.875rem;
+  margin: 6.25rem auto 1.875rem auto; }
   @media screen and (max-width: 768px) {
     .section__title-team {
       margin-top: 0; } }
@@ -716,7 +718,8 @@ table {
   line-height: 1; }
   @media screen and (max-width: 768px) {
     .section__title-burger-white {
-      text-align: center; } }
+      text-align: center;
+      font-size: 3.75rem; } }
 
 .section__title-orange {
   margin: 0 auto; }
@@ -802,6 +805,9 @@ table {
   display: -ms-flexbox;
   display: flex;
   padding-top: 1.25rem; }
+  @media screen and (max-width: 768px) {
+    .advantages {
+      padding-top: 0; } }
 
 .advantages__list {
   display: -webkit-box;
@@ -895,7 +901,8 @@ table {
   margin-bottom: 0.625rem; }
   @media screen and (max-width: 480px) {
     .advantages__title {
-      font-size: 1.875rem; } }
+      font-size: 1.75rem;
+      margin-bottom: 0; } }
 
 .advantages__description {
   font-family: 'ubuntu-light';
@@ -903,12 +910,15 @@ table {
   color: #2f3234;
   line-height: 2.4;
   margin: 0; }
+  @media screen and (max-width: 768px) {
+    .advantages__description {
+      line-height: 1.8; } }
 
 /*
 .advantages__title, .advantages__descriptin {
     @include phones {
         display: block;
-        line-height: 1;
+        line-height: 1.2;
     }
 }*/
 .reviews__list {
@@ -971,7 +981,8 @@ table {
   font-size: 0.875rem; }
   @media screen and (max-width: 480px) {
     .reviews__name {
-      font-size: 1.875rem; } }
+      font-size: 1.875rem;
+      margin: 0; } }
 
 .reviews__desc {
   margin-top: 1rem;
@@ -1028,9 +1039,9 @@ table {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
   @media screen and (max-width: 768px) {
     .accordeon__team {
       left: 0;
@@ -1044,6 +1055,13 @@ table {
       -ms-flex-align: center;
       align-items: center; } }
 
+.team__list {
+  widht: 100%;
+  margin-left: 6.25rem; }
+  @media screen and (max-width: 768px) {
+    .team__list {
+      margin: 1.875rem auto; } }
+
 .team__item {
   position: relative;
   cursor: pointer;
@@ -1053,7 +1071,8 @@ table {
   color: #fff;
   margin-left: 0.9375rem;
   margin-bottom: 1.5625rem;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 95%; }
   @media screen and (max-width: 768px) {
     .team__item {
       text-align: center;
@@ -1086,14 +1105,15 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 0;
-  overflow: hidden; }
+  display: none;
+  height: 7.5rem; }
 
-.team__hidden.active {
-  min-height: 7.5rem;
-  overflow: visible; }
+.active .team__hidden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   @media screen and (max-width: 768px) {
-    .team__hidden.active {
+    .active .team__hidden {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1104,9 +1124,24 @@ table {
       text-align: center;
       margin-bottom: 15%; } }
 
+/*
+.team__hidden.active {
+    height: rem(120px);
+    overflow: visible;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 15%;
+    }
+}*/
 .team__item.active {
   color: #f9b43b;
-  min-height: 7.5rem; }
+  height: 7.5rem; }
+  @media screen and (max-width: 768px) {
+    .team__item.active {
+      height: 13.75rem; } }
 
 .team__item.active::before {
   content: '\25B2';
@@ -1641,7 +1676,9 @@ table {
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-line-pack: center;
-  align-content: center; }
+  align-content: center;
+  margin-right: 1.25rem;
+  margin-left: 1.25rem; }
   @media screen and (max-width: 768px) {
     .burger {
       -webkit-box-orient: vertical;
@@ -1670,6 +1707,7 @@ table {
   background-repeat: no-repeat; }
   @media screen and (max-width: 768px) {
     .burger__choose {
+      margin-top: 1.25rem;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1711,7 +1749,8 @@ table {
     opacity: 1; }
   @media screen and (max-width: 768px) {
     .burger__kkal, .burger__consist {
-      height: 15%; } }
+      height: 15%;
+      width: 20%; } }
 
 .burger__name {
   width: 50%; }
@@ -1742,7 +1781,8 @@ table {
   line-height: 2; }
   @media screen and (max-width: 768px) {
     .burger__desc {
-      text-align: center; } }
+      text-align: center;
+      margin: 0; } }
 
 @media screen and (max-width: 768px) {
   .burger__price {

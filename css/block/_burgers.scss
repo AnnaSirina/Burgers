@@ -3,6 +3,8 @@
     flex-direction: row;
     justify-content: center;
     align-content: center;
+    margin-right: rem(20px);
+    margin-left: rem(20px);
 
     @include tablets {
         flex-direction: column;
@@ -21,6 +23,7 @@
     background-repeat: no-repeat;
 
     @include tablets {
+        margin-top: rem(20px);
         flex-direction: row;
         width: 70%;
         height: rem(450px);
@@ -54,6 +57,7 @@
 
     @include tablets {
         height: 15%;
+        width: 20%;
     }
 }
 
@@ -96,6 +100,7 @@
 
     @include tablets{
         text-align: center;
+        margin: 0;
     }
 }
 

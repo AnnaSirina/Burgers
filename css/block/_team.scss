@@ -11,7 +11,7 @@
     background: $grey-o;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 
     @include tablets {
         left: 0;
@@ -21,6 +21,14 @@
     }
 }
 
+.team__list {
+    widht: 100%;
+    margin-left: rem(100px);
+
+    @include tablets {
+    margin: rem(30px) auto;
+    }
+}
 
 .team__item {
     position: relative;
@@ -32,6 +40,8 @@
     margin-left: rem(15px);
     margin-bottom: rem(25px);
     cursor: pointer;
+    width: 95%;
+  
 
     @include tablets {
         text-align: center;
@@ -70,13 +80,26 @@
 
 .team__hidden {
     display: flex;
-    height: 0;
-    overflow: hidden;
+  display:none;
+  height: rem(120px);
 
+
+ 
+}
+.active .team__hidden {
+    display: flex;
+     @include tablets {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 15%;
+        
+    }
 }
 
+/*
 .team__hidden.active {
-    min-height: rem(120px);
+    height: rem(120px);
     overflow: visible;
 
     @include tablets {
@@ -85,12 +108,15 @@
         text-align: center;
         margin-bottom: 15%;
     }
-}
+}*/
 
 
 .team__item.active {
     color: $yellow;
-    min-height: rem(120px);
+    height: rem(120px);
+    @include tablets {
+    height: rem(220px);
+    }
 }
 
 .team__item.active::before {
