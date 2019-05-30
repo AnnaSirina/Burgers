@@ -1,6 +1,10 @@
 .advantages {
     display: flex;
     padding-top: rem(20px);
+
+    @include tablets {
+    padding-top:0;
+    }
 }
 
 
@@ -26,6 +30,7 @@
         width: 100%;
         text-align: left;
         margin-bottom: rem(20px);
+
     }
 
 
@@ -36,6 +41,7 @@
     @include phones {
         display: block;
         width: 65%;
+
     }
 }
 
@@ -95,7 +101,8 @@
     margin-bottom: rem(10px);
 
     @include phones {
-        font-size: rem(30px);
+        font-size: rem(28px);
+        margin-bottom: 0;
     }
 }
 
@@ -105,12 +112,16 @@
     color: $black;
     line-height: 2.4;
     margin: 0;
+
+    @include tablets {
+    line-height: 1.8;
+    }
 }
 
 /*
 .advantages__title, .advantages__descriptin {
     @include phones {
         display: block;
-        line-height: 1;
+        line-height: 1.2;
     }
 }*/

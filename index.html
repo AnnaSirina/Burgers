@@ -8,6 +8,9 @@
 	<title>Главная</title>
 	<link rel="stylesheet" href="./css/main.css">
 	<link rel="shortcut icon" href="./img/fav.ico" type="image/x-icon">
+	<script src="menu.js" defer></script>
+	<script src="team.js" defer></script>
+	<script src="burger.js" defer></script>
 </head>
 
 <body>
@@ -163,6 +166,39 @@
 		</section>
 
 
+		<section class="section burgers">
+			<div class="container container-burger">
+				<a class="prev__arrow"></a>
+				<div class="burger">
+					<div class="burger__choose">
+						<a class="burger__consist">
+							<svg class="icon burger-icon">
+								<use xlink:href="./img/sprite.svg#burger-icon"></use>
+							</svg>
+							<span class="burger__short">Состав</span>
+						</a>
+						<a class="burger__kkal">
+							<svg class="icon kkal-icon">
+								<use xlink:href="./img/sprite.svg#kkal-icon"></use>
+							</svg>
+							<span class="burger__short">Ккал</span>
+							</a>
+					</div>
+						
+					<div class="burger__name">
+						<h2 class="section__title section__title-burger-white">Dark beef burger</h2>
+						<div class="burger__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ab cum rem quod, ad voluptatibus harum molestiae. Placeat tempore, fugit ullam nobis delectus, qui fugiat vero saepe deserunt ad a!</div>
+						<div class="burger__price">
+							<span class="burger__nbr">500</span>
+							<span class="burger__rub">рублей</span>
+							<button class="burger__btn" type="submit">Заказать</button>
+						</div>
+					</div>
+				</div>
+				<a class="next__arrow"></a>
+			</div>
+		</section>
+
 
 
 
@@ -171,8 +207,8 @@
 			<div class="container container-team">
 				<div class="accordeon__team">
 					<h2 class="section__title section__title-team">Команда</h2>
-					<ul class="team__list">
-						<li class="team__item">
+					<ul class="team__list" id="team-list">
+						<li class="team__item" id="team-1">
 							<a class="team__link">Дэниэль Рэдклиф</a>
 							<div class="team__hidden">
 								<div class="team__avatar">
@@ -184,9 +220,9 @@
 								</div>
 							</div>
 						</li>
-						<li class="team__item team__item-active">
-							<a class="team__link team__link-active">Ричард Джеймс</a>
-							<div class="team__hidden team__hidden-active">
+						<li class="team__item" id="team-2">
+							<a class="team__link">Ричард Джеймс</a>
+							<div class="team__hidden">
 								<div class="team__avatar">
 									<img src="./img/aphex.jpg" alt="" class="team__img">
 								</div>
@@ -196,7 +232,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="team__item">
+						<li class="team__item" id="team-3">
 							<a class="team__link">Джейк Флинн</a>
 							<div class="team__hidden">
 								<div class="team__avatar">
@@ -208,7 +244,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="team__item">
+						<li class="team__item" id="team-4">
 							<a class="team__link">Николай Иванов</a>
 							<div class="team__hidden">
 								<div class="team__avatar">
@@ -231,11 +267,9 @@
 				<h2 class="section__title section__title-white">Меню</h2>
 				<div class="accordeon__menu">
 					<ul class="menu__list">
-						<li class="menu__items menu__items-active">
-							<div class="menu__name">
-								<h3 class="menu__title">Для мясоедов</h3>
-							</div>
-							<div class="menu__hidden menu__hidden-show">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+						<li class="menu__items" id="item-1">
+							<h3 class="menu__title">Для мясоедов</h3>
+							<div class="menu__hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 								do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
 								reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
@@ -246,10 +280,8 @@
 								pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
 								id est laborum.</div>
 						</li>
-						<li class="menu__items">
-							<div class="menu__name">
-								<h3 class="menu__title">Вегатерианское</h3>
-							</div>
+						<li class="menu__items" id="item-2">
+							<h3 class="menu__title">Вегатерианское</h3>
 							<div class="menu__hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 								laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
@@ -261,10 +293,8 @@
 								sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</div>
 						</li>
-						<li class="menu__items">
-							<div class="menu__name">
-								<h3 class="menu__title">Диетическое</h3>
-							</div>
+						<li class="menu__items" id="item-3">
+							<h3 class="menu__title">Диетическое</h3>
 							<div class="menu__hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 								laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
@@ -280,6 +310,7 @@
 				</div>
 			</div>
 		</section>
+		
 
 		<!--Секция отзывов-->
 		<section class="reviews">
@@ -294,6 +325,7 @@
 								такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 							</div>
 							<button type="button" class="btn btn-black">Подробнее</button>
+							<button type="button" class="btn btn-hidden">Читать отзыв</button>
 						</div>
 					</li>
 					<li class="reviews__item">
@@ -317,6 +349,7 @@
 								такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 							</div>
 							<button type="button" class="btn btn-black">Подробнее</button>
+							<button type="button" class="btn btn-hidden">Читать отзыв</button>
 						</div>
 					</li>
 					<li class="reviews__item">
@@ -328,6 +361,7 @@
 								такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 							</div>
 							<button type="button" class="btn btn-black">Подробнее</button>
+							<button type="button" class="btn btn-hidden">Читать отзыв</button>
 						</div>
 					</li>
 					<li class="reviews__item">
@@ -339,6 +373,7 @@
 								такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 							</div>
 							<button type="button" class="btn btn-black">Подробнее</button>
+							<button type="button" class="btn btn-hidden">Читать отзыв</button>
 						</div>
 					</li>
 					<li class="reviews__item">
@@ -350,6 +385,7 @@
 								такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 							</div>
 							<button type="button" class="btn btn-black">Подробнее</button>
+							<button type="button" class="btn btn-hidden">Читать отзыв</button>
 						</div>
 					</li>
 					<li class="reviews__item">
@@ -361,6 +397,7 @@
 								такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 							</div>
 							<button type="button" class="btn btn-black">Подробнее</button>
+							<button type="button" class="btn btn-hidden">Читать отзыв</button>
 						</div>
 					</li>
 					<li class="reviews__item">
@@ -372,6 +409,7 @@
 								такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 							</div>
 							<button type="button" class="btn btn-black">Подробнее</button>
+							<button type="button" class="btn btn-hidden">Читать отзыв</button>
 						</div>
 					</li>
 				</ul>
@@ -507,3 +545,5 @@
 </body>
 
 </html>
+
+

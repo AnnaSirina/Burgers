@@ -1,0 +1,148 @@
+.burger {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-right: rem(20px);
+    margin-left: rem(20px);
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.burger__choose {
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../img/black_burger.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include tablets {
+        margin-top: rem(20px);
+        flex-direction: row;
+        width: 70%;
+        height: rem(450px);
+    }
+
+    @include phones {
+        height: rem(320px);
+    }
+}
+
+.burger__kkal, .burger__consist {
+    width: 15%;
+    transition: 0.5s;
+    border-radius: 5px;
+    opacity: 0.7;
+    font-family: 'gagalin';
+    font-weight: rem(14px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:hover {
+        background:  #eb8c38;
+        opacity: 1;
+    }
+
+    @include tablets {
+        height: 15%;
+        width: 20%;
+    }
+}
+
+.burger__img {
+    
+}
+
+
+.burger__name {
+    width: 50%;
+    @include tablets {
+        width: 70%;
+    }
+}
+
+.prev__arrow, .next__arrow {
+    width: 5%;
+    cursor: pointer;
+}
+.prev__arrow::after {
+    content: "\2039";
+    color: $white;
+    font-size: rem(72px);
+}
+
+.next__arrow::after {
+    content: "\203a";
+    color: $white;
+    font-size: rem(72px);
+}
+
+
+.burger__desc {
+    font-family: 'ubuntu-light';
+    font-size: rem(14px);
+    color: $white;
+    margin-top: rem(35px);
+    margin-bottom: rem(20px);
+    line-height: 2;
+
+    @include tablets{
+        text-align: center;
+        margin: 0;
+    }
+}
+
+.burger__price {
+    @include tablets {
+        margin: 0 20%;
+        display: inline;
+    }
+
+    @include phones {
+        margin: 0 5%;
+    }
+}
+.burger__nbr {
+    font-family: 'gagalin';
+    font-size: rem(72px);
+    color: $red;
+    @include phones {
+        font-size: rem(42px);
+    }
+}
+
+.burger__rub {
+    font-family: 'gagalin';
+    font-size: rem(30px);
+    color: $red;
+    margin-right: rem(25px);
+    @include phones {
+        fon-size: rem(20px);
+    }
+}
+
+
+.burger__btn {
+    margin-right: rem(20px);
+    border: 0;
+    background: $red;
+    font-family: 'ubuntu-medium';
+    font-size: rem(13px);
+    text-transform: uppercase;
+    border-radius: rem(5px);
+    color: $white;
+    padding: rem(10px) rem(15px);
+    cursor: pointer;
+}

@@ -2,19 +2,17 @@
     position: relative;
 }
 
-.accordeon__menu {
+.menu__list {
     display: flex;
     filter: grayscale(1);
     position: absolute;
     top: 0;
-    left: 40%;
     right: 0;
     bottom: 0;
     background: $grey-o;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
+    
+    
     @include phones {
         left: 30%;
     }
@@ -23,6 +21,7 @@
 .menu__title,
 .menu__hidden {
     color: #fff;
+    
 }
 
 .menu__hidden {
@@ -49,14 +48,16 @@
 .menu__items {
     display: flex;
     height: 100vh;
+    margin: 0;
 }
 
-.menu__name {
-    height: 100vh;
-    display: flex;
-    justify-content: flex-end;
-    background: $grey-o;
-    cursor: pointer;
+.menu__items.active {
+     width: auto;
+}
+
+
+.menu__items.active .menu__hidden {
+    width: rem(450px);
 }
 
 .menu__title {
@@ -69,7 +70,15 @@
     font-size: rem(40px);
     font-family: 'gagalin';
     text-transform: uppercase;
-    margin: 0 rem(5px) rem(40px) rem(15px);
+    padding: rem(20px);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    background: $grey-o;
+    cursor: pointer;
+    color: #fff;
+    padding-bottom: rem(20px);
 
     @include phones {
         margin: 0;

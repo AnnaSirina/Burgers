@@ -25,12 +25,14 @@
 
     @include phones {
         font-size: rem(60px);
+        margin-top: 0;
     }
 }
 
 .section__title-team {
     margin-top: rem(100px);
     margin-bottom: rem(30px);
+    margin: rem(100px) auto rem(30px) auto;
 
     @include tablets {
         margin-top: 0;
@@ -43,7 +45,16 @@
 
 .section__title-white {
     color: $white;
+}
 
+.section__title-burger-white {
+    color: $white;
+    line-height: 1; 
+    
+    @include tablets {
+        text-align: center;
+        font-size: rem(60px);
+    }
 }
 
 .section__title-orange {

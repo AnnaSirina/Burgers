@@ -11,7 +11,7 @@
     background: $grey-o;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 
     @include tablets {
         left: 0;
@@ -21,8 +21,16 @@
     }
 }
 
+.team__list {
+    widht: 100%;
+    margin-left: rem(100px);
 
-.team__link {
+    @include tablets {
+    margin: rem(30px) auto;
+    }
+}
+
+.team__item {
     position: relative;
     cursor: pointer;
     display: block;
@@ -31,6 +39,9 @@
     color: $white;
     margin-left: rem(15px);
     margin-bottom: rem(25px);
+    cursor: pointer;
+    width: 95%;
+  
 
     @include tablets {
         text-align: center;
@@ -42,7 +53,7 @@
     }
 }
 
-.team__link::before {
+.team__item::before {
     content: '\25BC';
     color: $white;
     margin-right: rem(5px);
@@ -69,13 +80,26 @@
 
 .team__hidden {
     display: flex;
-    height: 0;
-    overflow: hidden;
+  display:none;
+  height: rem(120px);
 
+
+ 
+}
+.active .team__hidden {
+    display: flex;
+     @include tablets {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 15%;
+        
+    }
 }
 
-.team__hidden-active {
-    min-height: rem(120px);
+/*
+.team__hidden.active {
+    height: rem(120px);
     overflow: visible;
 
     @include tablets {
@@ -84,14 +108,18 @@
         text-align: center;
         margin-bottom: 15%;
     }
-}
+}*/
 
 
-.team__link-active {
+.team__item.active {
     color: $yellow;
+    height: rem(120px);
+    @include tablets {
+    height: rem(220px);
+    }
 }
 
-.team__link-active::before {
+.team__item.active::before {
     content: '\25B2';
     color: $yellow;
 }
