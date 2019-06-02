@@ -419,40 +419,40 @@
 		<section class="delivery">
 			<div class="container container-delivery">
 				<h2 class="section__title section__title-orange">Закажите доставку</h2>
-				<form class="order">
+				<form class="order" id ="myForm">
 
 					<div class="order__col1">
 						<div class="order__contact">
 							<div class="order__name">
 								<label class="order__label" for="name"><span class="order__label-name">Имя</span>
-									<input type="text" class="order__input order__input-name" id="name" placeholder="Введите имя"></label>
+									<input type="text" class="order__input order__input-name" name="name" placeholder="Введите имя" required></label>
 							</div>
 							<div class="order__tel">
 								<label class="order__label" for="tel"><span class="order__label-tel">Телефон</span>
-									<input type="text" class="order__input" id="tel" placeholder="+7 (XXX) XXX-XX-XX"></label>
+									<input type="text" class="order__input" name="phone" placeholder="+7 (XXX) XXX-XX-XX" required></label>
 							</div>
 						</div>
 						<div class="order__street">
 							<label class="order__label" for="street"><span class="order__label-title">Улица</span>
-								<input type="text" class="order__input" id="street" placeholder="ул.Ленина"></label>
+								<input type="text" class="order__input" name="street" placeholder="ул.Ленина"></label>
 						</div>
 						<div class="order__numbers">
 							<ul class="order__list">
 								<li class="order__item">
 									<label class="order__label" for="house"><span class="order__label-title">Дом</span>
-										<input type="text" class="order__input" id="house" placeholder="1"></label>
+										<input type="text" class="order__input" name="house" placeholder="1"></label>
 								</li>
 								<li class="order__item">
 									<label class="order__label" for="building"><span class="order__label-title">Корпус</span>
-										<input type="text" class="order__input" id="building" placeholder="1"></label>
+										<input type="text" class="order__input" name="building" placeholder="1"></label>
 								</li>
 								<li class="order__item">
 									<label class="order__label" for="flat"><span class="order__label-title">Квартира</span>
-										<input type="text" class="order__input" id="flat" placeholder="1"></label>
+										<input type="text" class="order__input" name="flat" placeholder="1"></label>
 								</li>
 								<li class="order__item">
 									<label class="order__label" for="floor"><span class="order__label-title">Этаж</span>
-										<input type="text" class="order__input" id="floor" placeholder="1"></label>
+										<input type="text" class="order__input" name="floor" placeholder="1"></label>
 								</li>
 
 							</ul>
@@ -466,7 +466,7 @@
 						<div class="order__comment">
 							<label class="order__label">
 								<span class="order__label-title">Комментарий:</span>
-								<textarea class="order__input order__input-textarea" placeholder="Нарисуйте на коробке кота"></textarea>
+								<textarea class="order__input order__input-textarea" name="comment" placeholder="Нарисуйте на коробке кота" required></textarea>
 							</label>
 						</div>
 						<div class="order__pay">
@@ -485,13 +485,13 @@
 							<label class="order__check-lbl" for="call">
 								<input class="order__check" id="call" name="call" type="checkbox" value="checked" />
 								<span class="order__check-custom"></span>
-								<span class="order__check-text">Не перезванивать</span>
+								<span class="order__check-text" name="callback">Не перезванивать</span>
 							</label>
 
 
 						</div>
 						<div class="order__button">
-							<button class="order__btn-submit" type="submit">Заказать</button>
+							<button class="order__btn-submit" id="SendButton" type="submit">Заказать</button>
 							<button class="order__btn-reset" type="reset">Очистить</button>
 						</div>
 					</div>
@@ -499,6 +499,41 @@
 			</div>
 		</section>
 
+		<script>
+			const myForm = document.querySelector('#myForm');
+			const sendbtn = document.querySelector('#SendButton');
+
+			sendbtn.addEventListener('click', function(event) {
+				event.preventDefault();
+				console.log(myForm.elements.name.value);
+				console.log(myForm.elements.phone.value);
+				console.log(myForm.elements.comment.value);
+
+				if (validateForm(myForm)) {
+					console.log('все ок');
+				}
+			});
+
+			function validateForm(form) {
+				let valid = true; 
+
+				if (!validateField(form.elements.name)) {
+					valid = false; 
+				}
+				if (!validateField(form.elements.phone)) {
+					valid = false; 
+				}
+				if (!validateField(form.elements.comments)) {
+					valid = false; 
+				}
+				return valid;
+			}
+
+			function validateField(field) {
+				alert('Пожалуйста, заполните, все поля формы!');
+				return field.checkValidity();	
+			}
+		</script>
 
 
 
