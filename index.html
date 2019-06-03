@@ -169,32 +169,91 @@
 		<section class="section burgers">
 			<div class="container container-burger">
 				<a class="prev__arrow"></a>
-				<div class="burger">
-					<div class="burger__choose">
-						<a class="burger__consist">
-							<svg class="icon burger-icon">
-								<use xlink:href="./img/sprite.svg#burger-icon"></use>
-							</svg>
-							<span class="burger__short">Состав</span>
-						</a>
-						<a class="burger__kkal">
-							<svg class="icon kkal-icon">
-								<use xlink:href="./img/sprite.svg#kkal-icon"></use>
-							</svg>
-							<span class="burger__short">Ккал</span>
+				<ul class="burger">
+					<li class="burger__item">
+
+						<div class="burger__choose">
+							<a class="burger__consist">
+								<svg class="icon burger-icon">
+									<use xlink:href="./img/sprite.svg#burger-icon"></use>
+								</svg>
+								<span class="burger__short">Состав</span>
 							</a>
-					</div>
-						
-					<div class="burger__name">
-						<h2 class="section__title section__title-burger-white">Dark beef burger</h2>
-						<div class="burger__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ab cum rem quod, ad voluptatibus harum molestiae. Placeat tempore, fugit ullam nobis delectus, qui fugiat vero saepe deserunt ad a!</div>
-						<div class="burger__price">
-							<span class="burger__nbr">500</span>
-							<span class="burger__rub">рублей</span>
-							<button class="burger__btn" type="submit">Заказать</button>
+							<a class="burger__kkal">
+								<svg class="icon kkal">
+									<use xlink:href="./img/sprite.svg#kkal"></use>
+								</svg>
+								<span class="burger__short">Ккал</span>
+								</a>
 						</div>
-					</div>
-				</div>
+							
+						<div class="burger__name">
+							<h2 class="section__title section__title-burger-white">Black beef burger</h2>
+							<div class="burger__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ab cum rem quod, ad voluptatibus harum molestiae. Placeat tempore, fugit ullam nobis delectus, qui fugiat vero saepe deserunt ad a!</div>
+							<div class="burger__price">
+								<span class="burger__nbr">500</span>
+								<span class="burger__rub">рублей</span>
+								<button class="burger__btn" type="submit">Заказать</button>
+							</div>
+						</div>
+					</li>
+
+					<li class="burger__item">	
+						<div class="burger__choose burger__choose-slide2">
+							<a class="burger__consist">
+								<svg class="icon burger-icon">
+									<use xlink:href="./img/sprite.svg#burger-icon"></use>
+								</svg>
+								<span class="burger__short">Состав</span>
+							</a>
+							<a class="burger__kkal">
+								<svg class="icon kkal-icon">
+									<use xlink:href="./img/sprite.svg#kkal-icon"></use>
+								</svg>
+								<span class="burger__short">Ккал</span>
+								</a>
+						</div>
+							
+						<div class="burger__name">
+							<h2 class="section__title section__title-burger-white">Hot spicy burger</h2>
+							<div class="burger__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ab cum rem quod, ad voluptatibus harum molestiae. Placeat tempore, fugit ullam nobis delectus, qui fugiat vero saepe deserunt ad a!</div>
+							<div class="burger__price">
+								<span class="burger__nbr">450</span>
+								<span class="burger__rub">рублей</span>
+								<button class="burger__btn" type="submit">Заказать</button>
+							</div>
+						</div>
+	
+					</li>
+
+					<li class="burger__item">
+						<div class="burger__choose burger__choose-slide3">
+							<a class="burger__consist">
+								<svg class="icon burger-icon">
+									<use xlink:href="./img/sprite.svg#burger-icon"></use>
+								</svg>
+								<span class="burger__short">Состав</span>
+							</a>
+							<a class="burger__kkal">
+								<svg class="icon kkal-icon">
+									<use xlink:href="./img/sprite.svg#kkal"></use>
+								</svg>
+								<span class="burger__short">Ккал</span>
+								</a>
+						</div>
+							
+						<div class="burger__name">
+							<h2 class="section__title section__title-burger-white"> Everyday burger</h2>
+							<div class="burger__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ab cum rem quod, ad voluptatibus harum molestiae. Placeat tempore, fugit ullam nobis delectus, qui fugiat vero saepe deserunt ad a!</div>
+							<div class="burger__price">
+								<span class="burger__nbr">300</span>
+								<span class="burger__rub">рублей</span>
+								<button class="burger__btn" type="submit">Заказать</button>
+							</div>
+						</div>
+					</li>
+
+				</ul>
 				<a class="next__arrow"></a>
 			</div>
 		</section>
@@ -426,10 +485,12 @@
 							<div class="order__name">
 								<label class="order__label" for="name"><span class="order__label-name">Имя</span>
 									<input type="text" class="order__input order__input-name" name="name" placeholder="Введите имя" required></label>
+									<div class="order__error"></div>
 							</div>
 							<div class="order__tel">
 								<label class="order__label" for="tel"><span class="order__label-tel">Телефон</span>
-									<input type="text" class="order__input" name="phone" placeholder="+7 (XXX) XXX-XX-XX" required></label>
+									<input type="tel" class="order__input" name="phone" placeholder="+7 (XXX) XXX-XX-XX" required></label>
+									<div class="order__error"></div>
 							</div>
 						</div>
 						<div class="order__street">
@@ -468,6 +529,7 @@
 								<span class="order__label-title">Комментарий:</span>
 								<textarea class="order__input order__input-textarea" name="comment" placeholder="Нарисуйте на коробке кота" required></textarea>
 							</label>
+							<div class="order__error"></div>
 						</div>
 						<div class="order__pay">
 							<label class="order__radio-lbl" tabindex="0">
@@ -499,43 +561,55 @@
 			</div>
 		</section>
 
-		<script>
-			const myForm = document.querySelector('#myForm');
-			const sendbtn = document.querySelector('#SendButton');
+		
+	<!--	<script type="text/javascript">
+			const form = document.querySelector('#myForm');
+			
+			
 
-			sendbtn.addEventListener('click', function(event) {
+			form.addEventListener('submit', event => {
 				event.preventDefault();
-				console.log(myForm.elements.name.value);
-				console.log(myForm.elements.phone.value);
-				console.log(myForm.elements.comment.value);
 
-				if (validateForm(myForm)) {
-					console.log('все ок');
-				}
-			});
+				let formdata = new FormData(form);
 
-			function validateForm(form) {
-				let valid = true; 
+				fetch('https://webdev-api.loftschool.com/sendmail', {
+					method: 'POST',
+					body: formdata}).then(data => data.json())
+			.then(json => {
+				alert(json.message);
+			})
+		})
+				
+		</script> 
 
-				if (!validateField(form.elements.name)) {
-					valid = false; 
-				}
-				if (!validateField(form.elements.phone)) {
-					valid = false; 
-				}
-				if (!validateField(form.elements.comments)) {
-					valid = false; 
-				}
-				return valid;
-			}
+-->
 
-			function validateField(field) {
-				alert('Пожалуйста, заполните, все поля формы!');
-				return field.checkValidity();	
-			}
-		</script>
+<script type="text/javascript">
+	const form = document.querySelector('#myForm');
+		
 
+	form.addEventListener('submit', event => {
+		event.preventDefault();
+		let formData = new FormData();
+		formData.append("name", form.elements.name.value);
+		formData.append("phone", form.elements.phone.value);
+		formData.append("comment", form.elements.comment.value);
+		formData.append("to", "sirina.anya@gmail.com");
 
+		let url = "https://webdev-api.loftschool.com/sendmail";
+
+		const xhr = new XMLHttpRequest();
+		xhr.responseType = "json";
+		xhr.open("POST", url);
+		xhr.setRequestHeader("X-Requested-With", "XMLHTTPRequest");
+		xhr.send(formData);
+
+		return xhr;
+		if (statusCode == 1 ) {
+			alert('ок');
+		}
+})
+</script> 
 
 
 		<!--секция контактов-->
