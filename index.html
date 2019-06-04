@@ -11,6 +11,7 @@
 	<script src="menu.js" defer></script>
 	<script src="team.js" defer></script>
 	<script src="burger.js" defer></script>
+	<script src="form.js" defer></script>
 </head>
 
 <body>
@@ -208,7 +209,7 @@
 							</a>
 							<a class="burger__kkal">
 								<svg class="icon kkal-icon">
-									<use xlink:href="./img/sprite.svg#kkal-icon"></use>
+									<use xlink:href="./img/sprite.svg#kkal"></use>
 								</svg>
 								<span class="burger__short">Ккал</span>
 								</a>
@@ -327,7 +328,7 @@
 				<div class="accordeon__menu">
 					<ul class="menu__list">
 						<li class="menu__items" id="item-1">
-							<h3 class="menu__title">Для мясоедов</h3>
+							<a class="menu__title">Для мясоедов</a>
 							<div class="menu__hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 								do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
@@ -340,7 +341,7 @@
 								id est laborum.</div>
 						</li>
 						<li class="menu__items" id="item-2">
-							<h3 class="menu__title">Вегатерианское</h3>
+							<a class="menu__title">Вегатерианское</a>
 							<div class="menu__hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 								laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
@@ -353,7 +354,7 @@
 							</div>
 						</li>
 						<li class="menu__items" id="item-3">
-							<h3 class="menu__title">Диетическое</h3>
+							<a class="menu__title">Диетическое</a>
 							<div class="menu__hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 								laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
@@ -562,54 +563,7 @@
 		</section>
 
 		
-	<!--	<script type="text/javascript">
-			const form = document.querySelector('#myForm');
-			
-			
-
-			form.addEventListener('submit', event => {
-				event.preventDefault();
-
-				let formdata = new FormData(form);
-
-				fetch('https://webdev-api.loftschool.com/sendmail', {
-					method: 'POST',
-					body: formdata}).then(data => data.json())
-			.then(json => {
-				alert(json.message);
-			})
-		})
-				
-		</script> 
-
--->
-
-<script type="text/javascript">
-	const form = document.querySelector('#myForm');
-		
-
-	form.addEventListener('submit', event => {
-		event.preventDefault();
-		let formData = new FormData();
-		formData.append("name", form.elements.name.value);
-		formData.append("phone", form.elements.phone.value);
-		formData.append("comment", form.elements.comment.value);
-		formData.append("to", "sirina.anya@gmail.com");
-
-		let url = "https://webdev-api.loftschool.com/sendmail";
-
-		const xhr = new XMLHttpRequest();
-		xhr.responseType = "json";
-		xhr.open("POST", url);
-		xhr.setRequestHeader("X-Requested-With", "XMLHTTPRequest");
-		xhr.send(formData);
-
-		return xhr;
-		if (statusCode == 1 ) {
-			alert('ок');
-		}
-})
-</script> 
+	
 
 
 		<!--секция контактов-->

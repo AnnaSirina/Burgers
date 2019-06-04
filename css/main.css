@@ -712,6 +712,9 @@ table {
 
 .section__title-white {
   color: #fff; }
+  @media screen and (max-width: 768px) {
+    .section__title-white {
+      font-size: 3.875rem; } }
 
 .section__title-burger-white {
   color: #fff;
@@ -1736,7 +1739,7 @@ table {
 
 .burger__choose-slide3 {
   background-image: url(../img/burger3.png);
-  background-size: 95%; }
+  background-size: 90%; }
 
 .burger__kkal, .burger__consist {
   width: 15%;

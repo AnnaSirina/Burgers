@@ -1,46 +1,36 @@
-/*<script>
-			const myForm = document.querySelector('#myForm');
-			const sendbtn = document.querySelector('#SendButton');
-			const field = document.querySelector('order__contact');
 
-			sendbtn.addEventListener('click', event => {
-				event.preventDefault();
-				console.log(myForm.elements.name.value);
-				console.log(myForm.elements.phone.value);
-				console.log(myForm.elements.comment.value);
+	const form = document.querySelector('#myForm');
+		
 
-				if (validateForm(myForm)) {
-					console.log('Данные заполнены');
-				} else {
-					alert('Заполните, пожалуйста, все поля формы!')
-				}
-			});
+	form.addEventListener('submit', event => {
+		event.preventDefault();
+		let formData = new FormData();
+		formData.append("name", form.elements.name.value);
+		formData.append("phone", form.elements.phone.value);
+		formData.append("comment", form.elements.comment.value);
+		formData.append("to", "sirina.anya@gmail.com");
 
-			function validateForm(form) {
-				let valid = true; 
+		let url = "https://webdev-api.loftschool.com/sendmail";
 
-				if (!validateField(form.elements.name)) {
-					valid = false; 
-				}
-				if (!validateField(form.elements.phone)) {
-					valid = false; 
-				}
-				if (!validateField(form.elements.comment)) {
-					valid = false; 
-				}
-				return valid;
-			}
+		const xhr = new XMLHttpRequest();
+		xhr.responseType = "json";
+		xhr.open("POST", url);
+		xhr.setRequestHeader("X-Requested-With", "XMLHTTPRequest");
+		xhr.send(formData);
 
-			function validateField(field) {
-				if (!field.checkValidity()) {
-					field.nextElementSibling.TextContent = field.ValidationMessage;
-					return false; 
-				} else {
-					field.nextElementSibling.TextContent = '' ;
-				return true;
-			}
-				
-					
-			}
-		</script>
-		*/
+		xhr.onreadystatechange = function() { 
+  			if (xhr.readyState != 4) return;
+ 				console.log('Загрузилось на сервер')
+  			if (xhr.status != 200) {
+    			alert('Нам очень жаль, но что-то пошло не так. Повторите заказ!');
+  			} else {
+    			alert('Спасибо, Ваш заказ принят! ');
+  			}
+		}
+
+		console.log('Загружаю...'); 
+
+
+		
+})
+
