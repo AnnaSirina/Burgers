@@ -5,10 +5,19 @@
     align-content: center;
     margin-right: rem(20px);
     margin-left: rem(20px);
+    width: rem(940px);
+    overflow: hidden;
 
     @include tablets {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+.burger__item {
+    @include tablets {
+    flex-direction: column;
+    margin: 0 auto;
     }
 }
 
@@ -27,15 +36,27 @@
         flex-direction: row;
         width: 70%;
         height: rem(450px);
+        margin: rem(10px) auto;
+        background-size: 110%;
     }
 
     @include phones {
         height: rem(320px);
     }
 }
+.burger__choose-slide2 {
+    background-image: url(../img/burger2.png);
+    background-size: 90%;
+}
+
+.burger__choose-slide3 {
+    background-image: url(../img/burger3.png);
+    background-size: 90%;
+}
 
 .burger__kkal, .burger__consist {
     width: 15%;
+    height: 20%;
     transition: 0.5s;
     border-radius: 5px;
     opacity: 0.7;
@@ -51,18 +72,17 @@
     text-align: center;
 
     &:hover {
-        background:  #eb8c38;
         opacity: 1;
     }
 
     @include tablets {
-        height: 15%;
+        height: 20%;
         width: 20%;
     }
 }
 
-.burger__img {
-    
+.burger__consist {
+    background:  #eb8c38;
 }
 
 
@@ -70,6 +90,7 @@
     width: 50%;
     @include tablets {
         width: 70%;
+        margin: 0 auto;
     }
 }
 
@@ -107,7 +128,10 @@
 .burger__price {
     @include tablets {
         margin: 0 20%;
-        display: inline;
+        display: flex;
+        align-items: baseline;
+        font-size: rem(25px);
+
     }
 
     @include phones {
@@ -145,4 +169,8 @@
     color: $white;
     padding: rem(10px) rem(15px);
     cursor: pointer;
+
+    @include tablets {
+    height: 20%;
+    }
 }

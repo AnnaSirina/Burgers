@@ -45,6 +45,10 @@
 
 .section__title-white {
     color: $white;
+
+    @include tablets {
+        font-size: rem(62px);
+    }
 }
 
 .section__title-burger-white {

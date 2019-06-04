@@ -11,6 +11,7 @@
 	<script src="menu.js" defer></script>
 	<script src="team.js" defer></script>
 	<script src="burger.js" defer></script>
+	<script src="form.js" defer></script>
 </head>
 
 <body>
@@ -169,32 +170,91 @@
 		<section class="section burgers">
 			<div class="container container-burger">
 				<a class="prev__arrow"></a>
-				<div class="burger">
-					<div class="burger__choose">
-						<a class="burger__consist">
-							<svg class="icon burger-icon">
-								<use xlink:href="./img/sprite.svg#burger-icon"></use>
-							</svg>
-							<span class="burger__short">Состав</span>
-						</a>
-						<a class="burger__kkal">
-							<svg class="icon kkal-icon">
-								<use xlink:href="./img/sprite.svg#kkal-icon"></use>
-							</svg>
-							<span class="burger__short">Ккал</span>
+				<ul class="burger">
+					<li class="burger__item">
+
+						<div class="burger__choose">
+							<a class="burger__consist">
+								<svg class="icon burger-icon">
+									<use xlink:href="./img/sprite.svg#burger-icon"></use>
+								</svg>
+								<span class="burger__short">Состав</span>
 							</a>
-					</div>
-						
-					<div class="burger__name">
-						<h2 class="section__title section__title-burger-white">Dark beef burger</h2>
-						<div class="burger__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ab cum rem quod, ad voluptatibus harum molestiae. Placeat tempore, fugit ullam nobis delectus, qui fugiat vero saepe deserunt ad a!</div>
-						<div class="burger__price">
-							<span class="burger__nbr">500</span>
-							<span class="burger__rub">рублей</span>
-							<button class="burger__btn" type="submit">Заказать</button>
+							<a class="burger__kkal">
+								<svg class="icon kkal">
+									<use xlink:href="./img/sprite.svg#kkal"></use>
+								</svg>
+								<span class="burger__short">Ккал</span>
+								</a>
 						</div>
-					</div>
-				</div>
+							
+						<div class="burger__name">
+							<h2 class="section__title section__title-burger-white">Black beef burger</h2>
+							<div class="burger__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ab cum rem quod, ad voluptatibus harum molestiae. Placeat tempore, fugit ullam nobis delectus, qui fugiat vero saepe deserunt ad a!</div>
+							<div class="burger__price">
+								<span class="burger__nbr">500</span>
+								<span class="burger__rub">рублей</span>
+								<button class="burger__btn" type="submit">Заказать</button>
+							</div>
+						</div>
+					</li>
+
+					<li class="burger__item">	
+						<div class="burger__choose burger__choose-slide2">
+							<a class="burger__consist">
+								<svg class="icon burger-icon">
+									<use xlink:href="./img/sprite.svg#burger-icon"></use>
+								</svg>
+								<span class="burger__short">Состав</span>
+							</a>
+							<a class="burger__kkal">
+								<svg class="icon kkal-icon">
+									<use xlink:href="./img/sprite.svg#kkal"></use>
+								</svg>
+								<span class="burger__short">Ккал</span>
+								</a>
+						</div>
+							
+						<div class="burger__name">
+							<h2 class="section__title section__title-burger-white">Hot spicy burger</h2>
+							<div class="burger__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ab cum rem quod, ad voluptatibus harum molestiae. Placeat tempore, fugit ullam nobis delectus, qui fugiat vero saepe deserunt ad a!</div>
+							<div class="burger__price">
+								<span class="burger__nbr">450</span>
+								<span class="burger__rub">рублей</span>
+								<button class="burger__btn" type="submit">Заказать</button>
+							</div>
+						</div>
+	
+					</li>
+
+					<li class="burger__item">
+						<div class="burger__choose burger__choose-slide3">
+							<a class="burger__consist">
+								<svg class="icon burger-icon">
+									<use xlink:href="./img/sprite.svg#burger-icon"></use>
+								</svg>
+								<span class="burger__short">Состав</span>
+							</a>
+							<a class="burger__kkal">
+								<svg class="icon kkal-icon">
+									<use xlink:href="./img/sprite.svg#kkal"></use>
+								</svg>
+								<span class="burger__short">Ккал</span>
+								</a>
+						</div>
+							
+						<div class="burger__name">
+							<h2 class="section__title section__title-burger-white"> Everyday burger</h2>
+							<div class="burger__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ab cum rem quod, ad voluptatibus harum molestiae. Placeat tempore, fugit ullam nobis delectus, qui fugiat vero saepe deserunt ad a!</div>
+							<div class="burger__price">
+								<span class="burger__nbr">300</span>
+								<span class="burger__rub">рублей</span>
+								<button class="burger__btn" type="submit">Заказать</button>
+							</div>
+						</div>
+					</li>
+
+				</ul>
 				<a class="next__arrow"></a>
 			</div>
 		</section>
@@ -268,7 +328,7 @@
 				<div class="accordeon__menu">
 					<ul class="menu__list">
 						<li class="menu__items" id="item-1">
-							<h3 class="menu__title">Для мясоедов</h3>
+							<a class="menu__title">Для мясоедов</a>
 							<div class="menu__hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 								do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
@@ -281,7 +341,7 @@
 								id est laborum.</div>
 						</li>
 						<li class="menu__items" id="item-2">
-							<h3 class="menu__title">Вегатерианское</h3>
+							<a class="menu__title">Вегатерианское</a>
 							<div class="menu__hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 								laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
@@ -294,7 +354,7 @@
 							</div>
 						</li>
 						<li class="menu__items" id="item-3">
-							<h3 class="menu__title">Диетическое</h3>
+							<a class="menu__title">Диетическое</a>
 							<div class="menu__hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 								laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
@@ -419,40 +479,42 @@
 		<section class="delivery">
 			<div class="container container-delivery">
 				<h2 class="section__title section__title-orange">Закажите доставку</h2>
-				<form class="order">
+				<form class="order" id ="myForm">
 
 					<div class="order__col1">
 						<div class="order__contact">
 							<div class="order__name">
 								<label class="order__label" for="name"><span class="order__label-name">Имя</span>
-									<input type="text" class="order__input order__input-name" id="name" placeholder="Введите имя"></label>
+									<input type="text" class="order__input order__input-name" name="name" placeholder="Введите имя" required></label>
+									<div class="order__error"></div>
 							</div>
 							<div class="order__tel">
 								<label class="order__label" for="tel"><span class="order__label-tel">Телефон</span>
-									<input type="text" class="order__input" id="tel" placeholder="+7 (XXX) XXX-XX-XX"></label>
+									<input type="tel" class="order__input" name="phone" placeholder="+7 (XXX) XXX-XX-XX" required></label>
+									<div class="order__error"></div>
 							</div>
 						</div>
 						<div class="order__street">
 							<label class="order__label" for="street"><span class="order__label-title">Улица</span>
-								<input type="text" class="order__input" id="street" placeholder="ул.Ленина"></label>
+								<input type="text" class="order__input" name="street" placeholder="ул.Ленина"></label>
 						</div>
 						<div class="order__numbers">
 							<ul class="order__list">
 								<li class="order__item">
 									<label class="order__label" for="house"><span class="order__label-title">Дом</span>
-										<input type="text" class="order__input" id="house" placeholder="1"></label>
+										<input type="text" class="order__input" name="house" placeholder="1"></label>
 								</li>
 								<li class="order__item">
 									<label class="order__label" for="building"><span class="order__label-title">Корпус</span>
-										<input type="text" class="order__input" id="building" placeholder="1"></label>
+										<input type="text" class="order__input" name="building" placeholder="1"></label>
 								</li>
 								<li class="order__item">
 									<label class="order__label" for="flat"><span class="order__label-title">Квартира</span>
-										<input type="text" class="order__input" id="flat" placeholder="1"></label>
+										<input type="text" class="order__input" name="flat" placeholder="1"></label>
 								</li>
 								<li class="order__item">
 									<label class="order__label" for="floor"><span class="order__label-title">Этаж</span>
-										<input type="text" class="order__input" id="floor" placeholder="1"></label>
+										<input type="text" class="order__input" name="floor" placeholder="1"></label>
 								</li>
 
 							</ul>
@@ -466,8 +528,9 @@
 						<div class="order__comment">
 							<label class="order__label">
 								<span class="order__label-title">Комментарий:</span>
-								<textarea class="order__input order__input-textarea" placeholder="Нарисуйте на коробке кота"></textarea>
+								<textarea class="order__input order__input-textarea" name="comment" placeholder="Нарисуйте на коробке кота" required></textarea>
 							</label>
+							<div class="order__error"></div>
 						</div>
 						<div class="order__pay">
 							<label class="order__radio-lbl" tabindex="0">
@@ -485,13 +548,13 @@
 							<label class="order__check-lbl" for="call">
 								<input class="order__check" id="call" name="call" type="checkbox" value="checked" />
 								<span class="order__check-custom"></span>
-								<span class="order__check-text">Не перезванивать</span>
+								<span class="order__check-text" name="callback">Не перезванивать</span>
 							</label>
 
 
 						</div>
 						<div class="order__button">
-							<button class="order__btn-submit" type="submit">Заказать</button>
+							<button class="order__btn-submit" id="SendButton" type="submit">Заказать</button>
 							<button class="order__btn-reset" type="reset">Очистить</button>
 						</div>
 					</div>
@@ -499,8 +562,8 @@
 			</div>
 		</section>
 
-
-
+		
+	
 
 
 		<!--секция контактов-->
