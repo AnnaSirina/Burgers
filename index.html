@@ -8,15 +8,21 @@
 	<title>Главная</title>
 	<link rel="stylesheet" href="./css/main.css">
 	<link rel="shortcut icon" href="./img/fav.ico" type="image/x-icon">
-	<script src="menu.js" defer></script>
-	<script src="team.js" defer></script>
-	<script src="burger.js" defer></script>
-	<script src="form.js" defer></script>
+	<script src="./js/menu.js" defer></script>
+	<script src="./js/team.js" defer></script>
+	<script src="./js/burger.js" defer></script>
+	<script src="./js/form.js" defer></script>
+	<script src="./js/map.js" defer></script>
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript">
+    </script>
+    
 </head>
 
 <body>
 	<div class="wrapper">
-
+		  
+		
 		<!--разметка для бокового меню-->
 		<div class="sidebar">
 			<ul class="sidebar__list">
@@ -326,10 +332,15 @@
 			<div class="container container-menu">
 				<h2 class="section__title section__title-white">Меню</h2>
 				<div class="accordeon__menu">
-					<ul class="menu__list">
-						<li class="menu__items" id="item-1">
-							<a class="menu__title">Для мясоедов</a>
-							<div class="menu__hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+
+					<ul class="menu-acco">
+			            <li class="menu-acco__item">
+			              <a class="menu-acco__trigger" href="#">
+			                <div class="menu-acco__trigger-text">Для мясоедов</div>
+			                </a>
+			              <div class="menu-acco__content">
+			                <div class="menu-acco__text">
+			                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 								do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
 								reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
@@ -338,35 +349,45 @@
 								aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
 								pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-								id est laborum.</div>
-						</li>
-						<li class="menu__items" id="item-2">
-							<a class="menu__title">Вегатерианское</a>
-							<div class="menu__hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-								laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-								velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-								in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-								veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-								irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-								sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</div>
-						</li>
-						<li class="menu__items" id="item-3">
-							<a class="menu__title">Диетическое</a>
-							<div class="menu__hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-								laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-								velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-								in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-								veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-								irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-								sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</div>
-						</li>
-					</ul>
+								id est laborum
+			                </div>
+			              </div>
+			            </li>
+			            <li class="menu-acco__item"><a class="menu-acco__trigger" href="#">
+			                <div class="menu-acco__trigger-text">Вегетарианское</div></a>
+			              <div class="menu-acco__content">
+			                <div class="menu-acco__text">
+			                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+								do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+								reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+								cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+								sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+								aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+								pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+								id est laborum
+			                </div>
+			              </div>
+			            </li>
+			            <li class="menu-acco__item"><a class="menu-acco__trigger" href="#">
+			                <div class="menu-acco__trigger-text">Диетическое</div></a>
+			              <div class="menu-acco__content">
+			                <div class="menu-acco__text">
+			                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+								do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+								reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+								cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+								sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+								aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+								pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+								id est laborum
+			                </div>
+			              </div>
+			            </li>
+			           </ul>
 				</div>
 			</div>
 		</section>
@@ -476,6 +497,13 @@
 			</div>
 		</section>
 
+		<section class="video">
+			<div class="container container-video">
+				<h2 class="section__title section__title-video">Как мы работаем</h2>
+				<video class="video__frame" preload="metadata" controls muted src="./video/eda.mp4" frameborder="0" allowfullscreen></video>	
+			</div>
+		</section>
+
 		<section class="delivery">
 			<div class="container container-delivery">
 				<h2 class="section__title section__title-orange">Закажите доставку</h2>
@@ -568,7 +596,9 @@
 
 		<!--секция контактов-->
 		<section class="contacts">
-			<div class="container container-map">
+			<div class="map" id="map"></div>
+			<div class="container container-map" >
+
 				<footer class="contact">
 					<div class="contact__data">
 						<div class="contact__info">

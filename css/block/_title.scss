@@ -73,3 +73,14 @@
         font-size: rem(56px);
     }
 }
+
+.section__title-video {
+    color: $black;
+    text-align: center;
+    
+
+    @include phones {
+        font-size: rem(60px);
+        margin-top: 0;
+    }
+}

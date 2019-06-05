@@ -84,8 +84,15 @@ body {
 }
 
 .container-map {
+    width: 100vw;;
+    
+}
+
+.container-video {
     width: 100%;
     height: 100vh;
+    justify-content: center;
+
 }
 
 .section {
@@ -97,6 +104,7 @@ body {
     }
 
 }
+
 
 .aside {
     display: flex;

@@ -2,88 +2,76 @@
     position: relative;
 }
 
-.menu__list {
-    display: flex;
-    filter: grayscale(1);
+.menu-acco {
     position: absolute;
-    top: 0;
     right: 0;
+    top: 0;
     bottom: 0;
-    background: $grey-o;
     display: flex;
-    
-    
-    @include phones {
-        left: 30%;
+}
+
+.menu-acco__item {
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    backgroung-color: $grey-o;
+
+    &.active {
+        .menu-acco__trigger-text {
+            color: $yellow;
+        }
     }
 }
 
-.menu__title,
-.menu__hidden {
-    color: #fff;
-    
+.menu-acco__trigger {
+    width: rem(80px);
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    position: relative;
+    background-color: $grey-o;
+
+ @include phones {
+    width: rem(50px);
+  }
 }
 
-.menu__hidden {
+.menu-acco__trigger-text {
+    font-size: rem(40px);
+    color: $white;
+    text-align: center;
+    font-family: 'gagalin';
+    text-transform: uppercase;
+    white-space: nowrap;
+    position: absolute;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: 0 0;
+    left: 50%;
+    top: 100%;
+    margin-top: rem(-20px);
+
+  @include phones {
+    font-size: rem(26px);
+  }
+}
+
+.menu-acco__content {
+    height: 100%;
+    background: rgba(#2f3234, .93);
     width: 0;
     overflow: hidden;
 }
 
-.menu__hidden-show {
-    width: 95%;
-    overflow: hidden;
-    padding: rem(30px);
-    height: 100vh;
-
-    @include phones {
-        width: 80%;
-    }
-}
-
-.menu__list {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.menu__items {
-    display: flex;
-    height: 100vh;
-    margin: 0;
-}
-
-.menu__items.active {
-     width: auto;
-}
-
-
-.menu__items.active .menu__hidden {
-    width: rem(450px);
-}
-
-.menu__title {
-    -webkit-writing-mode: vertical-rl;
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
-    margin-bottom: rem(70px);
-    font-size: rem(40px);
-    font-family: 'gagalin';
-    text-transform: uppercase;
-    padding: rem(20px);
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    background: $grey-o;
-    cursor: pointer;
+.menu-acco__text {
+    font-size: rem(14px);
     color: #fff;
-    padding-bottom: rem(20px);
+    font-family: 'ubuntu-light';
+    padding: rem(60px)  rem(8px);
+    width: 100%;
+    line-height: 1.8;
+    display: none;
 
-    @include phones {
-        margin: 0;
-        font-size: rem(42px);
-    }
-
-
+  @include phones {
+    padding: rem(25px) rem(15px);
+  }
 }
