@@ -14,9 +14,7 @@
 	<script src="./js/form.js" defer></script>
 	<script src="./js/map.js" defer></script>
 	<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript">
-    </script>
-    
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript"></script>
 </head>
 
 <body>
@@ -176,9 +174,8 @@
 		<section class="section burgers">
 			<div class="container container-burger">
 				<a class="prev__arrow"></a>
-				<ul class="burger">
+				<ul class="burger"  id="slider">
 					<li class="burger__item">
-
 						<div class="burger__choose">
 							<a class="burger__consist">
 								<svg class="icon burger-icon">
@@ -262,6 +259,7 @@
 
 				</ul>
 				<a class="next__arrow"></a>
+				
 			</div>
 		</section>
 
@@ -587,6 +585,19 @@
 						</div>
 					</div>
 				</form>
+
+				<div id="myModal" class="modal">
+				  <div class="modal__content">
+				    <div class="modal__header">
+				      <span class="model__close">&times;</span>
+				      <h2 class="model__title">Спасибо за Ваш заказ!</h2>
+				    </div>
+				    <div class="modal__body">
+				      Наш оператор обязательно с Вами свяжется для уточнения деталей доставки. 
+				    </div>
+				  </div>
+
+				</div>	
 			</div>
 		</section>
 
@@ -635,6 +646,8 @@
 		</section>
 
 	</div>
+
+	
 </body>
 
 </html>
