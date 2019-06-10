@@ -86,7 +86,7 @@
 
  
 }
-.active .team__hidden {
+.open .team__hidden {
     display: flex;
      @include tablets {
         flex-direction: column;
@@ -98,7 +98,7 @@
 }
 
 
-.team__item.active {
+.team__item.open {
     color: $yellow;
     height: rem(120px);
     @include tablets {
@@ -106,7 +106,7 @@
     }
 }
 
-.team__item.active::before {
+.team__item.open::before {
     content: '\25B2';
     color: $yellow;
 }

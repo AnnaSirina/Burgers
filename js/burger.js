@@ -7,13 +7,13 @@ $(function(){
 			$prv = $slider.find(".prev__arrow"),
 			$nxt = $slider.find(".next__arrow");
 	
-	$sliderLi.first().addClass("active");
+	$sliderLi.first().addClass("current");
 	
 	
 	
 	$prv.click(
 		function(){
-			var i =  $s.find('li.active').index();
+			var i =  $s.find('li.current').index();
 			if((i - 1) < 0)
 				i = count - 1;
 			else
@@ -32,17 +32,17 @@ $(function(){
 	function move_to_next()
 	{
 		var i;
-		if($s.find("li").last().hasClass("active"))
+		if($s.find("li").last().hasClass("current"))
 			i=0;
 		else
-			i= $s.find("li.active").next().index();
+			i= $s.find("li.current").next().index();
 		next(i);
 	}
 	
 		
 	function next(i){
-			$s.find("li.active").removeClass("active");
-			$sliderLi.eq(i).addClass("active");
+			$s.find("li.current").removeClass("current");
+			$sliderLi.eq(i).addClass("current");
 					
 	}	
 	

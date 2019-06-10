@@ -7,21 +7,23 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Главная</title>
 	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/block/onepage-scroll.css">
 	<link rel="shortcut icon" href="./img/fav.ico" type="image/x-icon">
 	<script src="./js/menu.js" defer></script>
 	<script src="./js/team.js" defer></script>
 	<script src="./js/burger.js" defer></script>
 	<script src="./js/form.js" defer></script>
 	<script src="./js/map.js" defer></script>
+	<script src="js/onepagescroll.js"></script>
 	<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript"></script>
 </head>
 
 <body>
 	<div class="wrapper">
-		  
-		<div class="maincontent">
-		<!--разметка для бокового меню-->
+	<div class="main">
+		
+		<!--разметка для бокового меню
 		<div class="sidebar">
 			<ul class="fixed-menu">
 				<li class="fixed-menu__item">
@@ -52,7 +54,7 @@
 					<a class="fixed-menu__link" href="" data-scroll-to="8"></a>
 				  </li>
 			  </ul>
-		</div>
+		</div>-->
 
 		<!--Первая страница лэндинга-->
 		<section class="section into-page active">
@@ -462,9 +464,12 @@
 						</div>
 					</li>
 				</ul>
-			</div>
-		</section>
 
+			</div>
+			
+		</section>
+	
+</script>
 		<section class="video">
 			<div class="container container-video">
 				<h2 class="section__title section__title-video">Как мы работаем</h2>
@@ -478,6 +483,7 @@
 					  <div class="player__playback">
 						<button class="player__playback-button"></button>
 					  </div>
+					  
 					  <div class="player__duration">
 						<span class="player__duration-completed">0:00</span> :
 						<span class="player__duration-estimate">0:00</span>
@@ -629,8 +635,27 @@
 				</footer>
 			</div>
 		</section>
+
+		<div class="full-review popup" id="full-review">
+    <a class="full-review__close" href="#">
+      <svg class="full-review__close-btn">
+        <use xlink:href="./img/sprite/sprite.svg#close"></use>
+      </svg>
+    </a>
+    <div class="full-review__inner">
+      <div class="full-review__title">Констнтин Спилберг</div>
+      <div class="full-review__content">
+        Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими
+        мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять,
+        невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
+        расплавленным.
+
+      </div>
+    </div>
+  </div>
 	</div>
 	</div>
+	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
@@ -638,6 +663,7 @@
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/player.js"></script>
+
 	  
 	  
 </body>

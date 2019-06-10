@@ -3,7 +3,7 @@ let player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player("yt-player", {
     width: "660",
-    height: "405",
+   height: "405",
     videoId: "zD-0y4sTx9I",
     playerVars: {
       controls: 0,
@@ -38,6 +38,8 @@ function onPlayerReady(event) {
     updateTimerDisplay();
   }, 1000);
 }
+
+
 
 function onPlayerStateChange(event) {
   const playerButton = $(".player__start");
@@ -98,3 +100,4 @@ function formatTime(time) {
 
   return minutes + ":" + formatedSeconds;
 }
+
