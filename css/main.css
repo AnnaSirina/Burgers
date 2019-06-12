@@ -612,8 +612,8 @@ body, .onepage-wrapper, html {
 
 .onepage-pagination {
   position: absolute;
-  right: 10%;
-  top: 20%;
+  right: 5%;
+  top: 5%;
   z-index: 5;
   list-style: none;
   margin: 0;
@@ -1504,6 +1504,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   margin: 0 auto; }
 
 .contact__data {
+  padding: 1rem 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1865,6 +1866,18 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   width: 3.75rem;
   height: 3.8125rem; }
 
+.beef {
+  width: 2.75rem;
+  height: 2.4375rem; }
+
+.salad {
+  width: 2.375rem;
+  height: 2.375rem; }
+
+.buns {
+  width: 3rem;
+  height: 1.875rem; }
+
 .menu-link {
   vertical-align: middle;
   position: relative;
@@ -2110,6 +2123,57 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   @media screen and (max-width: 768px) {
     .burger__btn {
       height: 20%; } }
+
+.burger__pop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: solid 1px black;
+  padding: 0.625rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 40%;
+  height: 40%;
+  margin: 10% 60% 45% 45%;
+  border-radius: 5px; }
+  @media screen and (max-width: 768px) {
+    .burger__pop {
+      width: 30%;
+      height: 30%; } }
+
+.burger__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0;
+  margin: 5% 10%;
+  text-align: left; }
+
+.burger__cont-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 0.9375rem;
+  font-family: 'ubuntu';
+  font-size: 1.125rem;
+  color: #332f34; }
+
+.burger__cont-name {
+  font-style: bold;
+  color: #2f3234; }
 
 .video__frame {
   width: 41.25rem;

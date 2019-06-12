@@ -193,3 +193,43 @@
     height: 20%;
     }
 }
+
+
+.burger__pop {
+    display: flex;
+    flex-direction: column;
+	border: solid 1px black;
+	padding: rem(10px);
+	background-color: rgba(255, 255, 255, 0.8);
+    width:40%;
+    height: 40%;
+    margin: 10% 60% 45% 45%;
+    border-radius: 5px;
+       @include tablets {
+        width: 30%;
+        height: 30%;
+    }
+}
+
+.burger__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    margin: 5% 10%;
+    text-align: left;
+}
+
+.burger__cont-icon {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(15px);
+    font-family: 'ubuntu';
+    font-size: rem(18px);
+    color: $grey;
+}
+
+.burger__cont-name {
+    font-style: bold;
+    color: $black;
+}

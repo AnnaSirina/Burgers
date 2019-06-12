@@ -149,7 +149,7 @@
 				<ul class="burger"  id="slider">
 					<li class="burger__item">
 						<div class="burger__choose">
-							<a class="burger__consist">
+							<a class="burger__consist"href="#" onclick="burgeropen();"><span class="btn_close border_radius_class"></span>
 								<svg class="icon burger-icon">
 									<use xlink:href="./img/sprite.svg#burger-icon"></use>
 								</svg>
@@ -232,6 +232,39 @@
 				</ul>
 				<a class="next__arrow"></a>
 				
+
+				<div class="burger__pop" id="popup_burger" style="display: none;">
+					<ul class="burger__menu">
+						<li class="burger__cont-icon">
+							<div class="burger__const-img">
+								<svg class="icon beef">
+									<use xlink:href="./img/sprite.svg#beef"></use>
+								</svg>
+							</div>
+							<div class="burger__cont-name">Говядина</div>
+							<div class="burger__cont-gr">300г</div>
+						</li>
+						<li class="burger__cont-icon">
+							<div class="burger__const-img">
+								<svg class="icon buns">
+									<use xlink:href="./img/sprite.svg#buns"></use>
+								</svg>
+							</div>
+							<div class="burger__cont-name">Булочки</div>
+							<div class="burger__cont-gr">100г</div>
+						</li>
+						<li class="burger__cont-icon">
+							<div class="burger__const-img">
+								<svg class="icon salad">
+									<use xlink:href="./img/sprite.svg#salad"></use>
+								</svg>
+							</div>
+							<div class="burger__cont-name">Зелень</div>
+							<div class="burger__cont-gr">70г</div>
+						</li>
+					</ul>
+					
+				</div>
 			</div>
 		</section>
 
@@ -633,8 +666,10 @@
 	<script src="js/player.js"></script>
 	<script src="js/popup.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/bPopup/0.11.0/jquery.bpopup.min.js"></script>
-		<script src="https://vk.com/js/api/openapi.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bPopup/0.11.0/jquery.bpopup.min.js"></script>
+	<!--<script src="https://vk.com/js/api/openapi.js"></script>-->
+	<script src="https://vk.com/js/api/openapi.js"></script>
+	<script src="js/burgerpop.js"></script>
 
 	  
 </body>
