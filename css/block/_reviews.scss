@@ -73,6 +73,9 @@
 }
 
 .btn-black {
+    display: block;
+    width: 40%;
+    background: transparent;
     @include tablets {
         align-items: center;
         margin: rem(15px) auto;
@@ -104,5 +107,41 @@
     background: $grey;
     border-radius: 5px;
 }
+.popup_vk {
+	border: solid 1px black;
+	padding: rem(10px);
+	background-color: white;
+	width:30%;
+    margin-top:15%;
+    margin-left: 35%;
+    @include tablets {
+        width: 50%;
+    }
+}
 
+.border_radius_class {
+	border-radius: 10px;  
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px;  
+}
+
+.btn_close {
+    padding: 3%;
+    background-color:transparent;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    color: $yellow;
+    margin: 0 auto;
+
+    &hover {
+        background: $grey-o;
+    }
+}
+
+.btn_group {
+	width: 30%;
+}
 

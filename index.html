@@ -11,6 +11,7 @@
 	<link rel="shortcut icon" href="./img/fav.ico" type="image/x-icon">
 	<script src="./js/menu.js" defer></script>
 	<script src="./js/team.js" defer></script>
+	<script src="./js/popup.js" defer></script>
 	<script src="./js/burger.js" defer></script>
 	<script src="./js/form.js" defer></script>
 	<script src="./js/map.js" defer></script>
@@ -22,40 +23,6 @@
 <body>
 	<div class="wrapper">
 	<div class="main">
-		
-		<!--разметка для бокового меню
-		<div class="sidebar">
-			<ul class="fixed-menu">
-				<li class="fixed-menu__item">
-				  <a class="fixed-menu__link" href="" data-scroll-to="0"></a>
-				</li>
-				<li class="fixed-menu__item">
-				  <a class="fixed-menu__link" href="" data-scroll-to="1"></a>
-				</li>
-				<li class="fixed-menu__item">
-				  <a class="fixed-menu__link" href="" data-scroll-to="2"></a>
-				</li>
-				<li class="fixed-menu__item">
-				  <a class="fixed-menu__link" href="" data-scroll-to="3"></a>
-				</li>
-				<li class="fixed-menu__item">
-				  <a class="fixed-menu__link" href="" data-scroll-to="4"></a>
-				</li>
-				<li class="fixed-menu__item">
-				  <a class="fixed-menu__link" href="" data-scroll-to="5"></a>
-				</li>
-				<li class="fixed-menu__item">
-				  <a class="fixed-menu__link" href="" data-scroll-to="6"></a>
-				</li>
-				<li class="fixed-menu__item">
-				  <a class="fixed-menu__link" href="" data-scroll-to="7"></a>
-				</li>
-				<li class="fixed-menu__item">
-					<a class="fixed-menu__link" href="" data-scroll-to="8"></a>
-				  </li>
-			  </ul>
-		</div>-->
-
 		<!--Первая страница лэндинга-->
 		<section class="section into-page active">
 			<div class="container container-fp">
@@ -366,7 +333,7 @@
 		<!--Секция отзывов-->
 		<section class="reviews">
 			<div class="container-fluid">
-				<ul class="reviews__list">
+				<ul class="reviews__list" id="myList">
 					<li class="reviews__item">
 						<img src="./img/1.jpg" class="reviews__pic" alt="отзыв клиента Мария">
 						<div class="reviews__icon-showeffect">
@@ -375,8 +342,8 @@
 								А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть
 								такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 							</div>
-							<button type="button" class="btn btn-black">Подробнее</button>
-							<button type="button" class="btn btn-hidden">Читать отзыв</button>
+							<a class="btn-black" href="#" onclick="bopen();"><span class="btn_close border_radius_class">Подробнее</span></a>
+							<a class="btn-black btn-hidden" href="#" onclick="bopen();"><span class="btn_close border_radius_class">Читать отзыв</span></a> 
 						</div>
 					</li>
 					<li class="reviews__item">
@@ -387,8 +354,8 @@
 								А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть
 								такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 							</div>
-							<button type="button" class="btn btn-black">Подробнее</button>
-							<button type="button" class="btn btn-hidden">Читать отзыв</button>
+							<a class="btn-black" href="#" onclick="bopen();"><span class="btn_close border_radius_class">Подробнее</span></a>
+							<a class="btn-black btn-hidden" href="#" onclick="bopen();"><span class="btn_close border_radius_class">Читать отзыв</span></a> 
 						</div>
 					</li>
 					<li class="reviews__item">
@@ -399,8 +366,8 @@
 								А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть
 								такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 							</div>
-							<button type="button" class="btn btn-black">Подробнее</button>
-							<button type="button" class="btn btn-hidden">Читать отзыв</button>
+							<a class="btn-black" href="#" onclick="bopen();"><span class="btn_close border_radius_class">Подробнее</span></a>
+							<a class="btn-black btn-hidden" href="#" onclick="bopen();"><span class="btn_close border_radius_class">Читать отзыв</span></a> 
 						</div>
 					</li>
 					<li class="reviews__item">
@@ -411,8 +378,8 @@
 								А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть
 								такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 							</div>
-							<button type="button" class="btn btn-black">Подробнее</button>
-							<button type="button" class="btn btn-hidden">Читать отзыв</button>
+							<a class="btn-black" href="#" onclick="bopen();"><span class="btn_close border_radius_class">Подробнее</span></a>
+							<a class="btn-black btn-hidden" href="#" onclick="bopen();"><span class="btn_close border_radius_class">Читать отзыв</span></a> 
 						</div>
 					</li>
 					<li class="reviews__item">
@@ -423,8 +390,8 @@
 								А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть
 								такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 							</div>
-							<button type="button" class="btn btn-black">Подробнее</button>
-							<button type="button" class="btn btn-hidden">Читать отзыв</button>
+							<a class="btn-black" href="#" onclick="bopen();"><span class="btn_close border_radius_class">Подробнее</span></a>
+							<a class="btn-black btn-hidden" href="#" onclick="bopen();"><span class="btn_close border_radius_class">Читать отзыв</span></a> 
 						</div>
 					</li>
 					<li class="reviews__item">
@@ -435,8 +402,8 @@
 								А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть
 								такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 							</div>
-							<button type="button" class="btn btn-black">Подробнее</button>
-							<button type="button" class="btn btn-hidden">Читать отзыв</button>
+							<a class="btn-black" href="#" onclick="bopen();"><span class="btn_close border_radius_class">Подробнее</span></a>
+							<a class="btn-black btn-hidden" href="#" onclick="bopen();"><span class="btn_close border_radius_class">Читать отзыв</span></a> 
 						</div>
 					</li>
 					<li class="reviews__item">
@@ -447,8 +414,8 @@
 								А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть
 								такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 							</div>
-							<button type="button" class="btn btn-black">Подробнее</button>
-							<button type="button" class="btn btn-hidden">Читать отзыв</button>
+							<a class="btn-black" href="#" onclick="bopen();"><span class="btn_close border_radius_class">Подробнее</span></a>
+							<a class="btn-black btn-hidden" href="#" onclick="bopen();"><span class="btn_close border_radius_class">Читать отзыв</span></a> 
 						</div>
 					</li>
 					<li class="reviews__item">
@@ -459,17 +426,35 @@
 								А мысли все о них и о них. Нельзя устоять, невозможно забыть. Никогда не будма, что булочки могут быть
 								такими мягкими, котлета такой сочной, а сыр таким расплавленным.
 							</div>
-							<button type="button" class="btn btn-black">Подробнее</button>
-							<button type="button" class="btn btn-hidden">Читать отзыв</button>
+							<a class="btn-black" href="#" onclick="bopen();"><span class="btn_close border_radius_class">Подробнее</span></a>
+							<a class="btn-black btn-hidden" href="#" onclick="bopen();"><span class="btn_close border_radius_class">Читать отзыв</span></a> 
 						</div>
 					</li>
 				</ul>
-
-			</div>
-			
+			</div>	
 		</section>
 	
-</script>
+
+		<div id="popup_vk" style="display: none;">
+			<div class="popup_vk border_radius_class"> 
+				<div> 
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod reiciendis maiores magnam culpa, repellendus animi inventore ratione. Quisquam, dolorum! Aliquid repellat totam odit ducimus accusantium atque consectetur quibusdam vel facere.
+				</div>
+		
+				<div id="vk_groups_popup"></div>
+
+				<a href="#" onclick="bclose();"> 
+					<span class="btn_close border_radius_class">
+						закрыть
+					</span>
+				</a>
+
+			</div>
+
+		</div>
+		
+		
+
 		<section class="video">
 			<div class="container container-video">
 				<h2 class="section__title section__title-video">Как мы работаем</h2>
@@ -636,26 +621,9 @@
 			</div>
 		</section>
 
-		<div class="full-review popup" id="full-review">
-    <a class="full-review__close" href="#">
-      <svg class="full-review__close-btn">
-        <use xlink:href="./img/sprite/sprite.svg#close"></use>
-      </svg>
-    </a>
-    <div class="full-review__inner">
-      <div class="full-review__title">Констнтин Спилберг</div>
-      <div class="full-review__content">
-        Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими
-        мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять,
-        невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
-        расплавленным.
+		
+		
 
-      </div>
-    </div>
-  </div>
-	</div>
-	</div>
-	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
@@ -663,8 +631,11 @@
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/player.js"></script>
+	<script src="js/popup.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bPopup/0.11.0/jquery.bpopup.min.js"></script>
+		<script src="https://vk.com/js/api/openapi.js"></script>
 
-	  
 	  
 </body>
 
