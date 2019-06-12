@@ -1,0 +1,130 @@
+.block-list {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  margin: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+}
+
+.block-list__item {
+  display: inherit;
+  width: rem(70px);
+  padding: 0;
+  margin: 0;
+  background: rgba(#2f3234, .5);
+}
+
+.block-list__item.active {
+  width: auto;
+ }
+
+.block-list__title {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  padding: rem(65px) rem(13px);
+  color: #fff;
+  font-weight: 700;
+  font-size: rem(40px);
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0;
+  font-family: 'gagalin';
+  text-transform: uppercase;
+}
+
+.block-list__desc {
+  background: rgba(#2f3234, .7);
+  font-size: rem(14px);
+  color: #fff;
+  font-family: 'ubuntu-light';
+  padding: rem(10px);
+  width: 0;
+  display: none;
+}
+
+.block-list__item.active .block-list__desc {
+  width: rem(450px);
+  display: block;
+}
+
+/*.menu {
+    position: relative;
+}
+
+.menu-acco {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.menu-acco__item {
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    backgroung-color: $grey-o;
+
+    &.active {
+        .menu-acco__trigger-text {
+            color: $yellow;
+        }
+    }
+}
+
+.menu-acco__trigger {
+    width: rem(80px);
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    position: relative;
+    background-color: $grey-o;
+
+ @include phones {
+    width: rem(50px);
+  }
+}
+
+.menu-acco__trigger-text {
+    font-size: rem(40px);
+    color: $white;
+    text-align: center;
+    font-family: 'gagalin';
+    text-transform: uppercase;
+    white-space: nowrap;
+    position: absolute;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: 0 0;
+    left: 50%;
+    top: 100%;
+    margin-top: rem(-20px);
+
+  @include phones {
+    font-size: rem(26px);
+  }
+}
+
+.menu-acco__content {
+    height: 100%;
+    background: rgba(#2f3234, .93);
+    width: 0;
+    overflow: hidden;
+}
+
+.menu-acco__text {
+    font-size: rem(14px);
+    color: #fff;
+    font-family: 'ubuntu-light';
+    padding: rem(60px)  rem(8px);
+    width: 100%;
+    line-height: 1.8;
+    display: none;
+
+  @include phones {
+    padding: rem(25px) rem(15px);
+  }
+}
+*/

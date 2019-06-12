@@ -1,13 +1,32 @@
-@import "../css/base/normalize.css";
+/* base layout */
+@import "../css/base/normalize";
+@import "../css/base/variables";
+@import "../css/base/mixins";
 @import "../css/base/fonts";
-@import "../css/base/base";
+@import "../css/base/layout";
 @import "../css/base/pages_background";
-@import "../css/sections/header.scss";
-@import "../css/sections/fp_about.scss";
-@import "../css/sections/nav_menu.scss";
-@import "../css/sections/order_button.scss";
-@import "../css/sections/next.scss";
-@import "../css/sections/aside.scss";
-@import "../css/sections/advanteges.scss";
-@import "../css/sections/header-pagetwo.scss";
-@import "../css/sections/rewiers.scss";
+@import "../css/base/onepage-scroll";
+
+
+/* blocks */
+@import "../css/block/header";
+@import "../css/block/fp__content";
+@import "../css/block/nav_menu";
+@import "../css/block/header_btn";
+@import "../css/block/title";
+@import "../css/block/logo";
+@import "../css/block/next";
+@import "../css/block/sidebar";
+@import "../css/block/advantages";
+@import "../css/block/reviews";
+@import "../css/block/team";
+@import "../css/block/menu";
+@import "../css/block/footer";
+@import "../css/block/form";
+@import "../css/block/icon";
+@import "../css/block/menu_link";
+@import "../css/block/burgers";
+@import "../css/block/video";
+@import "../css/block/modal";
+@import "../css/block/player";
+

@@ -1,0 +1,147 @@
+.reviews__list {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+
+.reviews__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 25%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    filter: grayscale(1);
+
+    @include tablets {
+        width: 50%;
+        height: 25%;
+        text-align: center;
+    }
+}
+
+.reviews__pic {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+.reviews__icon-showeffect {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: $grey-o;
+    padding: rem(45px) rem(15px) rem(10px) rem(15px);
+    color: $white;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.reviews__icon-showeffect:hover {
+    opacity: 1;
+}
+
+.reviews__name {
+    font-family: 'gagalin';
+    font-size: rem(14px);
+
+    @include phones {
+        font-size: rem(30px);
+        margin: 0;
+    }
+
+}
+
+.reviews__desc {
+    margin-top: rem(16px);
+    margin-bottom: 0;
+    font-family: 'ubuntu-light';
+    font-weight: lighter;
+    font-size: rem(14px);
+    line-height: 2.2;
+
+    @include phones {
+        display: none;
+    }
+
+}
+
+.btn-black {
+    display: block;
+    width: 40%;
+    background: transparent;
+    @include tablets {
+        align-items: center;
+        margin: rem(15px) auto;
+
+    }
+
+    @include phones {
+        display: none;
+    }
+}
+
+.btn-black:hover {
+    background: $grey;
+    border-radius: 5px;
+}
+
+.btn-hidden {
+    display: none;
+
+    @include phones {
+        display: block;
+        margin: 0 auto;
+        font-size: rem(16px);
+    }
+}
+
+
+.btn-hidden:hover {
+    background: $grey;
+    border-radius: 5px;
+}
+.popup_vk {
+	border: solid 1px black;
+	padding: rem(10px);
+	background-color: white;
+	width:30%;
+    margin-top:15%;
+    margin-left: 35%;
+    @include tablets {
+        width: 50%;
+    }
+}
+
+.border_radius_class {
+	border-radius: 10px;  
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px;  
+}
+
+.btn_close {
+    padding: 3%;
+    background-color:transparent;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    color: $yellow;
+    margin: 0 auto;
+
+    &hover {
+        background: $grey-o;
+    }
+}
+
+.btn_group {
+	width: 30%;
+}
+

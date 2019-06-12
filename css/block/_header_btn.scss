@@ -1,0 +1,22 @@
+.btn {
+    display: block;
+    padding: rem(10px) rem(15px);
+    border-radius: 5px;
+    font-family: 'ubuntu-medium';
+    font-size: rem(13px);
+    text-transform: uppercase;
+    color: $white;
+}
+
+
+
+.header__button {
+    background: $red;
+    transition: 0.2s;
+
+
+    &:hover {
+        font-weight: bold;
+        border: 1px solid #fff;
+    }
+}

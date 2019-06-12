@@ -1,0 +1,39 @@
+.nav {
+    margin-right: rem(20px);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    @include tablets {
+        display: none;
+    }
+
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.nav__item {
+    &:before {
+        content: '\2022';
+        color: $white;
+        width: 4px;
+    }
+
+    &:first-child::before {
+        content: '';
+    }
+
+    .nav__link {
+        font-family: 'ubuntu-medium';
+        font-size: rem(13px);
+        color: $white;
+        text-transform: uppercase;
+        margin: rem(12px);
+    }
+
+}

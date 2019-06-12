@@ -1,0 +1,127 @@
+.advantages {
+    display: flex;
+    padding-top: rem(20px);
+
+    @include tablets {
+    padding-top:0;
+    }
+}
+
+
+.advantages__list {
+    display: flex;
+    text-align: center;
+
+    @include phones {
+        flex-direction: column;
+
+    }
+}
+
+.advantages__item {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: rem(20px);
+
+    @include phones {
+        flex-direction: row;
+        width: 100%;
+        text-align: left;
+        margin-bottom: rem(20px);
+
+    }
+
+
+
+}
+
+.advanteges__desc {
+    @include phones {
+        display: block;
+        width: 65%;
+
+    }
+}
+
+.advantages__logo {
+    margin-bottom: rem(24px);
+
+    @include phones {
+        margin-right: rem(20px);
+        width: 30%;
+    }
+}
+
+/*
+.advantages__logo:after {
+    content: "";
+    display: block; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: url('./img/sprite.svg#meat') center center;
+    background-repeat: no-repeat;
+    width: 96px;
+    height: 89px;
+   
+}
+
+.advantages__logo {
+    background: url('./img/sprite.svg#meat') center center;
+    background-repeat: no-repeat;
+    width: 96px;
+    height: 89px;
+}
+
+.advantages__item:first-child .advantages__logo:after {
+    background: url('./img/sprite.svg#hand');
+    background-repeat: no-repeat;
+    width: 73px;
+    height: 85.875px;
+}
+
+
+.advantages__item:last-child .advantages__logo:after {
+    background: url('./img/sprite.svg#natural');
+    background-repeat: no-repeat;
+    width: 88px;
+    height: 75px;
+}
+*/
+
+
+.advantages__title {
+    font-family: 'lifehack';
+    font-size: rem(24px);
+    color: $black;
+    margin: 0;
+    margin-bottom: rem(10px);
+
+    @include phones {
+        font-size: rem(28px);
+        margin-bottom: 0;
+    }
+}
+
+.advantages__description {
+    font-family: 'ubuntu-light';
+    font-size: rem(14px);
+    color: $black;
+    line-height: 2.4;
+    margin: 0;
+
+    @include tablets {
+    line-height: 1.8;
+    }
+}
+
+/*
+.advantages__title, .advantages__descriptin {
+    @include phones {
+        display: block;
+        line-height: 1.2;
+    }
+}*/

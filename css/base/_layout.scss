@@ -1,0 +1,155 @@
+html {
+    @include tablets {
+        font-size: rem(15px);
+    }
+
+    @include phones {
+        font-size: rem(13px);
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+body {
+    background-color: #fff;
+    font-family: 'ubuntu', 'lifehack', 'gagalin', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    margin: 0px;
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: rem(16px);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+.maincontent {
+    height: 100%;
+    transition: transform 1s;
+    will-change: transform;
+}
+
+.container {
+    max-width: rem(1100px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.container-fp {
+    position: relative;
+    justify-content: center;
+}
+
+.container-burger {
+    width: 100%;
+   height: 100vh;
+    display: flex;
+    flex-direction: row;  
+}
+
+.container-fluid {
+    width: 100%;
+    height: 100vh;
+    background: $grey;
+}
+
+.container-team {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.container-menu {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+}
+
+.container-delivery {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+
+.container-map {
+    width: 100vw;;
+    
+}
+
+.container-video {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+
+}
+
+.section {
+    width: 100%;
+    height: 100vh;   
+    @include tablets {
+        min-height: initial;
+    }
+
+}
+
+
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    min-width: 10%;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    &>li {
+        list-style: none;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: normal;
+    margin-top: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

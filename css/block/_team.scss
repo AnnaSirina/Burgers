@@ -1,0 +1,134 @@
+.team {
+    position: relative;
+}
+
+.accordeon__team {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    background: $grey-o;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include tablets {
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.team__list {
+    width: 100%;
+    margin-left: rem(100px);
+
+    @include tablets {
+    margin: rem(30px) auto;
+    }
+}
+
+.team__item {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    font-family: 'gagalin';
+    font-size: rem(14px);
+    color: $white;
+    margin-left: rem(15px);
+    margin-bottom: rem(25px);
+    cursor: pointer;
+    width: 95%;
+  
+
+    @include tablets {
+        text-align: center;
+        font-size: rem(25px);
+    }
+
+    @include phones {
+        font-size: rem(28px);
+    }
+}
+
+.team__item::before {
+    content: '\25BC';
+    color: $white;
+    margin-right: rem(5px);
+}
+
+.team__avatar {
+    margin-right: rem(15px);
+    margin-left: rem(30px);
+
+}
+
+.team__img {
+    display: inline-block;
+    vertical-align: top;
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+.team__hidden {
+    display: flex;
+  display:none;
+  height: rem(120px);
+
+
+ 
+}
+.open .team__hidden {
+    display: flex;
+     @include tablets {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 15%;
+        
+    }
+}
+
+
+.team__item.open {
+    color: $yellow;
+    height: rem(120px);
+    @include tablets {
+    height: rem(220px);
+    }
+}
+
+.team__item.open::before {
+    content: '\25B2';
+    color: $yellow;
+}
+
+.team__text {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 0;
+    font-family: 'ubuntu-light';
+    font-size: rem(14px);
+    color: $white;
+
+    @include tablets {
+        margin: 0 auto;
+    }
+
+}
+
+.team__prof {
+    font-family: 'ubuntu';
+    font-weight: bold;
+    font-size: rem(14px);
+    color: $white;
+}

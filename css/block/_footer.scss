@@ -1,0 +1,75 @@
+.map {
+     width: 100%;
+     height: 100vh;
+}
+
+.smallMap {
+        width: rem(100px);
+        height: rem(70px);
+    }
+
+.contacts {
+    position: relative;
+}
+
+.contact {
+    background: url('../img/delivery_back.jpg') center center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    margin: 0 auto;
+}
+
+.contact__data {
+
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 50%;
+
+    @include tablets {
+    width: 100%;
+    }
+}
+
+.contacts__socials {
+    width: 50%;
+}
+
+.contact__list {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: rem(10px);
+
+}
+
+.contact__items {
+    margin-right: rem(35px);
+}
+
+.contact__adres {
+    color: $white;
+}
+
+.contact__tel {
+    color: $yellow;
+    text-decoration: none;
+}
