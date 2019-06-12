@@ -22,7 +22,7 @@
 }
 
 .team__list {
-    widht: 100%;
+    width: 100%;
     margin-left: rem(100px);
 
     @include tablets {
@@ -86,7 +86,7 @@
 
  
 }
-.active .team__hidden {
+.open .team__hidden {
     display: flex;
      @include tablets {
         flex-direction: column;
@@ -97,21 +97,8 @@
     }
 }
 
-/*
-.team__hidden.active {
-    height: rem(120px);
-    overflow: visible;
 
-    @include tablets {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-bottom: 15%;
-    }
-}*/
-
-
-.team__item.active {
+.team__item.open {
     color: $yellow;
     height: rem(120px);
     @include tablets {
@@ -119,7 +106,7 @@
     }
 }
 
-.team__item.active::before {
+.team__item.open::before {
     content: '\25B2';
     color: $yellow;
 }

@@ -1,0 +1,10 @@
+.video__frame {
+    width: rem(660px);
+    height: rem(420px);
+    margin-top: rem(30px);
+
+    @include phones {
+        width: rem(400px);
+        height: rem(260px);
+    }
+}

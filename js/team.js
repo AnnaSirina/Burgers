@@ -2,22 +2,23 @@
 var accordeon = document.getElementById('team-list');
 //открыть\закрыть элемент списка
 function openClose(e){
+  e.preventDefualt;
 
   let _target = e.target.closest("li")
    //есть ли активный элемент
-  if (_target.classList.contains("active")) {
+  if (_target.classList.contains("open")) {
     //убрать активный класс
-    _target.classList.remove("active")
+    _target.classList.remove("open")
    } else {
-     let _active = document.querySelector(".active")
+     let _active = document.querySelector(".open")
      
        if (_active) {
           //удалим класс
-          _active.classList.remove("active")
+          _active.classList.remove("open")
            //при клике на пункт меню открыть его спиcок
-          _target.classList.add("active")
+          _target.classList.add("open")
       }
-       _target.classList.add("active")
+       _target.classList.add("open")
   }
 }
 accordeon.addEventListener('click', openClose);
