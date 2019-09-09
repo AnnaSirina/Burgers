@@ -455,6 +455,11 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  @media screen and (max-width: 480px) {
+    .container-video {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; } }
 
 .section {
   width: 100%;
@@ -731,13 +736,16 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   padding-bottom: 4.25rem; }
   @media screen and (max-width: 480px) {
     .fp__desc {
-      font-size: 3.25rem; } }
+      font-size: 2.875rem; } }
 
 .fp__burger {
   max-width: 100%; }
   @media screen and (max-width: 768px) {
     .fp__burger {
       max-width: 90%; } }
+  @media screen and (max-width: 768px) {
+    .fp__burger {
+      max-width: 80%; } }
 
 .nav {
   margin-right: 1.25rem;
@@ -808,7 +816,12 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   margin-top: 7.5rem; }
   @media screen and (max-width: 768px) {
     .section__title-fp {
-      margin-top: 0; } }
+      margin-top: 0;
+      font-size: 4.5rem;
+      line-heigth: 1; } }
+  @media screen and (max-width: 480px) {
+    .section__title-fp {
+      font-size: 3.125rem; } }
 
 .section__title-black {
   color: #2f3234;
@@ -834,7 +847,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   color: #fff; }
   @media screen and (max-width: 768px) {
     .section__title-white {
-      font-size: 3.875rem; } }
+      margin-left: 0.625rem; } }
 
 .section__title-burger-white {
   color: #fff;
@@ -842,7 +855,10 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   @media screen and (max-width: 768px) {
     .section__title-burger-white {
       text-align: center;
-      font-size: 3.75rem; } }
+      font-size: 3rem; } }
+  @media screen and (max-width: 480px) {
+    .section__title-burger-white {
+      font-size: 2.25rem; } }
 
 .section__title-orange {
   margin: 0 auto; }
@@ -852,15 +868,16 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
       text-align: center; } }
   @media screen and (max-width: 480px) {
     .section__title-orange {
-      font-size: 3.5rem; } }
+      font-size: 3.5rem;
+      line-height: 1; } }
 
 .section__title-video {
   color: #2f3234;
   text-align: center; }
   @media screen and (max-width: 480px) {
     .section__title-video {
-      font-size: 3.75rem;
-      margin-top: 0; } }
+      font-size: 3.25rem;
+      margin-top: 20%; } }
 
 .logo {
   margin-right: 3.4375rem; }
@@ -967,7 +984,10 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center; }
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
   @media screen and (max-width: 480px) {
     .advantages__list {
       -webkit-box-orient: vertical;
@@ -1549,6 +1569,12 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   -ms-flex-pack: end;
   justify-content: flex-end;
   margin-left: 0.625rem; }
+  @media screen and (max-width: 480px) {
+    .contact__list {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-left: 0; } }
 
 .contact__items {
   margin-right: 2.1875rem; }
@@ -1885,7 +1911,8 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-left: 1.875rem;
+  margin-left: 0.625rem;
+  margin-right: 0.9375rem;
   display: none; }
   @media screen and (max-width: 768px) {
     .menu-link {
@@ -1923,8 +1950,8 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   justify-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
-  margin-right: 1.25rem;
-  margin-left: 1.25rem;
+  margin-right: 0.625rem;
+  margin-left: 0.625rem;
   width: 58.75rem;
   overflow: hidden; }
   @media screen and (max-width: 768px) {
@@ -1981,7 +2008,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   -ms-flex-pack: justify;
   justify-content: space-between;
   background-image: url(../img/black_burger.png);
-  background-size: 100%;
+  background-size: 90%;
   background-position: center;
   background-repeat: no-repeat; }
   @media screen and (max-width: 768px) {
@@ -2075,7 +2102,10 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   @media screen and (max-width: 768px) {
     .burger__desc {
       text-align: center;
-      margin: 0; } }
+      margin: 0;
+      line-height: 1;
+      margin-top: 0.625rem;
+      margin-bottom: 0.625rem; } }
 
 @media screen and (max-width: 768px) {
   .burger__price {
@@ -2107,7 +2137,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   margin-right: 1.5625rem; }
   @media screen and (max-width: 480px) {
     .burger__rub {
-      fon-size: 1.25rem; } }
+      fon-size: 1.125rem; } }
 
 .burger__btn {
   margin-right: 1.25rem;
@@ -2141,8 +2171,8 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   border-radius: 5px; }
   @media screen and (max-width: 768px) {
     .burger__pop {
-      width: 30%;
-      height: 30%; } }
+      width: 50%;
+      height: auto; } }
 
 .burger__menu {
   display: -webkit-box;
@@ -2254,6 +2284,9 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   bottom: 0;
   background: url("../img/v.jpg") center center/cover no-repeat;
   cursor: pointer; }
+  @media screen and (max-width: 480px) {
+    .player__splash {
+      display: none; } }
 
 @media screen and (max-width: 480px) {
   .player__wrapper {
@@ -2270,6 +2303,9 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   right: 0;
   height: 35px;
   background: #3e3e3e; }
+  @media screen and (max-width: 480px) {
+    .player__controls {
+      display: none; } }
 
 .player__start {
   width: 0;
@@ -2305,7 +2341,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   height: 4px;
   width: 27.875rem;
   background: #626262;
-  top: 15px;
+  top: 0.9375rem;
   left: 3.125rem; }
 
 .player__playback-button {
@@ -2328,3 +2364,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   right: 1.25rem;
   color: #626262;
   font-weight: bold; }
+
+.yt-player {
+  width: 41.25rem;
+  height: 26.25rem; }

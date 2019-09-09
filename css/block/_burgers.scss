@@ -3,8 +3,8 @@
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    margin-right: rem(20px);
-    margin-left: rem(20px);
+    margin-right: rem(10px);
+    margin-left: rem(10px);
     width: rem(940px);
     overflow: hidden;
 
@@ -46,7 +46,7 @@
     flex-direction: column;
     justify-content: space-between;
     background-image: url(../img/black_burger.png);
-    background-size: 100%;
+    background-size: 90%;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -111,6 +111,7 @@
         width: 70%;
         margin: 0 auto;
     }
+
 }
 
 .prev__arrow, .next__arrow {
@@ -141,6 +142,9 @@
     @include tablets{
         text-align: center;
         margin: 0;
+        line-height: 1;
+        margin-top: rem(10px);
+        margin-bottom: rem(10px);
     }
 }
 
@@ -172,7 +176,7 @@
     color: $red;
     margin-right: rem(25px);
     @include phones {
-        fon-size: rem(20px);
+        fon-size: rem(18px);
     }
 }
 
@@ -206,8 +210,8 @@
     margin: 10% 60% 45% 45%;
     border-radius: 5px;
        @include tablets {
-        width: 30%;
-        height: 30%;
+        width: 50%;
+        height: auto;
     }
 }
 

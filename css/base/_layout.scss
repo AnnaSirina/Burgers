@@ -99,6 +99,9 @@ body {
     height: 100vh;
     justify-content: center;
 
+    @include phones {
+    justify-content: flex-start;
+    }
 }
 
 .section {

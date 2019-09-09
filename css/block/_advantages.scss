@@ -11,10 +11,10 @@
 .advantages__list {
     display: flex;
     text-align: center;
+    justify-content: center;
 
     @include phones {
         flex-direction: column;
-
     }
 }
 

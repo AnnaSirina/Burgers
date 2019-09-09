@@ -59,6 +59,10 @@
     justify-content: flex-end;
     margin-left: rem(10px);
 
+    @include phones {
+    justify-content: center;
+    margin-left: 0;
+    }
 }
 
 .contact__items {
